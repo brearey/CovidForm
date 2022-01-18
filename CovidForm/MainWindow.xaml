@@ -1,0 +1,436 @@
+﻿<Window x:Class="CovidForm.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CovidForm"
+        mc:Ignorable="d"
+        Title="опросник"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="18"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}">
+    <Grid Background="#ffdadada">
+        <Border MinWidth="400" Margin="15" Background="White" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="40" CornerRadius="10">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="LightGray" ShadowDepth="0"/>
+            </Border.Effect>
+            <ScrollViewer>
+            <StackPanel>
+                    <TextBlock
+                    FontSize="22"
+                    FontWeight="Bold"
+                        HorizontalAlignment="Center"
+                    Margin="0 0 0 40">
+                        <Run>Информация о случаях инфекционных заболеваний</Run>
+                        <LineBreak/>
+                        <Run>у лиц с подозрением на новую коронавирусную инфекцию</Run>
+                    </TextBlock>
+
+                <Grid Margin="20 20 20 40" ShowGridLines="False">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="0" VerticalAlignment="Center">Дата поступления информации *</Label>
+                    <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center">Номер и дата экстренного извещения *</Label>
+                    <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="2" VerticalAlignment="Center">ФИО *</Label>
+                    <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="3" VerticalAlignment="Center">Дата рождения *</Label>
+                    <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="4" VerticalAlignment="Center">Возраст *</Label>
+                    <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="5" VerticalAlignment="Center">Возрастная группа *</Label>
+                    <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="6" VerticalAlignment="Center">Домашний адрес в РС(Я) *</Label>
+                    <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="7" VerticalAlignment="Center">Мобильный телефон *</Label>
+                    <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="8" VerticalAlignment="Center">Гражданство *</Label>
+                    <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="9" VerticalAlignment="Center">Пол *</Label>
+                    <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="10" VerticalAlignment="Center">Социальный статус *</Label>
+                    <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="11" VerticalAlignment="Center">Место инфицирования *</Label>
+                    <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="12" VerticalAlignment="Center">Диагноз *</Label>
+                    <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="13" VerticalAlignment="Center">Степень тяжести заболевания *</Label>
+                    <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="14" VerticalAlignment="Center">Дата заболевания *</Label>
+                    <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="15" VerticalAlignment="Center">Дата обращения *</Label>
+
+                    <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="16" VerticalAlignment="Center">Госпитализация *</Label>
+                    <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="17" VerticalAlignment="Center">Дата госпитализации *</Label>
+                    <TextBlock HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="18" VerticalAlignment="Center">
+                        <Run>Полное название места работы/учебы (курс, группа, класс).</Run>
+                        <LineBreak/>
+                        <Run>Адрес фактического нахождения места работы. Занимаемая должность *</Run>
+                    </TextBlock>
+                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="19" VerticalAlignment="Center">Дата последнего посещения *</Label>
+                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="20" VerticalAlignment="Center">Эпидемиологический анамнез *</Label>
+                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="21" VerticalAlignment="Center">Болел ранее COVID-19 (дата) *</Label>
+                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="22" VerticalAlignment="Center">Выезжал за пределы населенного пункта места жительства *</Label>
+                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="23" VerticalAlignment="Center">Выезжал за пределы субъекта РФ, в том числе на отдых</Label>
+                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="24" VerticalAlignment="Center">Выезжал за рубеж, в том числе на отдых *</Label>
+                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="25" VerticalAlignment="Center">Дата возвращения в место проживания *</Label>
+                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="26" VerticalAlignment="Center">Город, район, населенный пункт (в случае выезда) Название города, района, села</Label>
+                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="27" VerticalAlignment="Center">Оценка эпидемиологических рисков: применение мер личной и общественной профилактики *</Label>
+                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="28" VerticalAlignment="Center">Соблюдение масочного режима *</Label>
+                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="29" VerticalAlignment="Center">Проведение гигиенической обработки рук *</Label>
+                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="30" VerticalAlignment="Center">Использование антисептиков для обработки рук *</Label>
+                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="31" VerticalAlignment="Center">Использование перчаток да/нет *</Label>
+                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="32" VerticalAlignment="Center">Соблюдение режима дистанцирования *</Label>
+
+                    <DatePicker
+                        MinWidth="600"
+                        x:Name="info_date_01"
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignDatePicker}"
+                        Language="ru"
+                        SelectedDate="{Binding StartDate}" />
+                    <TextBox
+                        x:Name="number_and_date_02"
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}">
+                    </TextBox>
+                    
+                    <TextBox
+                        x:Name="fio_03"
+                        Grid.Row="2"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                    <DatePicker
+                        x:Name="birthday_date_04"
+                        SelectedDate="11/22/88"
+                        Grid.Row="3"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignDatePicker}"
+                        Language="ru"/>
+                    <TextBox
+                        x:Name="age_05"
+                        Grid.Row="4"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                    <TextBox
+                        x:Name="age_group_06"
+                        Grid.Row="5"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                    <TextBox
+                        x:Name="address_home_07"
+                        Grid.Row="6"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                    <TextBox
+                        x:Name="mobile_phone_08"
+                        Grid.Row="7"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                    <TextBox
+                        x:Name="citizen_09"
+                        Grid.Row="8"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                    <ComboBox
+                        x:Name="sex_10"
+                        Grid.Row="9"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom">
+                            <TextBlock>Мужской</TextBlock>
+                            <TextBlock>Женский</TextBlock>
+                    </ComboBox>
+
+                    <ComboBox
+                        x:Name="social_status_11"
+                        Grid.Row="10"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom">
+                            <TextBlock>Дети дошкольного возраста организованные</TextBlock>
+                            <TextBlock>Дети дошкольного возраста не организованные</TextBlock>
+                            <TextBlock>Дети школьного возраста</TextBlock>
+                            <TextBlock>Студенты</TextBlock>
+                            <TextBlock>Служащие</TextBlock>
+                            <TextBlock>Рабочие</TextBlock>
+                            <TextBlock>Пенсионеры</TextBlock>
+                            <TextBlock>Работники сельского хозяйства</TextBlock>
+                            <TextBlock>Временно не работающий</TextBlock>
+                            <TextBlock>Работники торговли</TextBlock>
+                            <TextBlock>Работники общественного питания</TextBlock>
+                            <TextBlock>Работники коммунального обслуживания</TextBlock>
+                            <TextBlock>Работники образовательных организаций</TextBlock>
+                            <TextBlock>Работники медицинских организаций</TextBlock>
+                            <TextBlock>Военнослужащие</TextBlock>
+                            <TextBlock>Работники транспорта</TextBlock>
+                            <TextBlock>Работники правоохранительных органов</TextBlock>
+                            <TextBlock>Проживающие в организациях социальной защиты</TextBlock>
+                            <TextBlock>Находящиеся в пенитенциарных учреждениях</TextBlock>
+                            <TextBlock>Другое</TextBlock>
+                    </ComboBox>
+
+                    <ComboBox
+                        x:Name="infection_site_12"
+                        Grid.Row="11"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom">
+                            <TextBlock>Не установлен</TextBlock>
+                            <TextBlock>Контакт в семье</TextBlock>
+                            <TextBlock>С родственниками (друзьями/знакомыми)</TextBlock>
+                            <TextBlock>Соседями по месту жительства</TextBlock>
+                            <TextBlock>В местах врем. пребывания (гостиница/общежитие, санаторий и тд)</TextBlock>
+                            <TextBlock>При получении медиц. помощи</TextBlock>
+                            <TextBlock>В образовательной организации</TextBlock>
+                            <TextBlock>По месту работы</TextBlock>
+                            <TextBlock>В транспорте (самолет, поезд, автобус, такси)</TextBlock>
+                        </ComboBox>
+
+                    <ComboBox
+                        x:Name="diagnosis_13"
+                        Grid.Row="12"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom">
+                            <TextBlock>Пневмония</TextBlock>
+                            <TextBlock>ОРВИ</TextBlock>
+                            <TextBlock>Носитель</TextBlock>
+                            <TextBlock>Подозрение на COVID</TextBlock>
+
+                    </ComboBox>
+
+                    <ComboBox
+                        x:Name="disease_severity_14"
+                        Grid.Row="13"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom">
+                            <TextBlock>Бессимптомное течение</TextBlock>
+                            <TextBlock>Легкой степени тяжести</TextBlock>
+                            <TextBlock>Средней степени тяжести</TextBlock>
+                            <TextBlock>Тяжелой степени тяжести</TextBlock>
+                    </ComboBox>
+
+                    <DatePicker
+                        x:Name="illness_date_15"
+                        Grid.Row="14"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignDatePicker}"
+                        Language="ru"
+                        SelectedDate="{Binding StartDate}" />
+
+                    <DatePicker
+                        x:Name="application_date_16"
+                        Grid.Row="15"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignDatePicker}"
+                        Language="ru"
+                        SelectedDate="{Binding StartDate}" />
+
+                    <ComboBox
+                        x:Name="hospital_17"
+                        Grid.Row="16"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom">
+                            <TextBlock>Госпитализация</TextBlock>
+                            <TextBlock>Амбулаторное</TextBlock>
+                    </ComboBox>
+
+                    <DatePicker
+                        x:Name="hospital_date_18"
+                        Grid.Row="17"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignDatePicker}"
+                        Language="ru"
+                        SelectedDate="{Binding StartDate}" />
+
+                    <TextBox
+                        x:Name="work_info_19"
+                        Grid.Row="18"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                    <DatePicker
+                        x:Name="date_last_visit_20"
+                        Grid.Row="19"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignDatePicker}"
+                        Language="ru"
+                        SelectedDate="{Binding StartDate}" />
+
+                    <TextBox
+                        x:Name="epidem_history_21"
+                        Grid.Row="20"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                    <DatePicker
+                        x:Name="date_before_covid_22"
+                        Grid.Row="21"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignDatePicker}"
+                        Language="ru"
+                        SelectedDate="{Binding StartDate}" />
+
+                    <TextBox
+                        x:Name="outside_vilage_23"
+                        Grid.Row="22"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                    <TextBox
+                        x:Name="outside_subject_24"
+                        Grid.Row="23"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                    <TextBox
+                        x:Name="outside_country_25"
+                        Grid.Row="24"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                    <DatePicker
+                        x:Name="date_return_26"
+                        Grid.Row="25"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignDatePicker}"
+                        Language="ru"
+                        SelectedDate="{Binding StartDate}" />
+
+                    <TextBox
+                        x:Name="city_district_27"
+                        Grid.Row="26"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                    <TextBox
+                        x:Name="risk_28"
+                        Grid.Row="27"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                    <ComboBox
+                        x:Name="mask_29"
+                        Grid.Row="28"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom">
+                            <TextBlock>нет</TextBlock>
+                            <TextBlock>соблюдал повсеместно</TextBlock>
+                            <TextBlock>только при посещении закрытых пространств</TextBlock>
+                            <TextBlock>от случая к случаю</TextBlock>
+                            <TextBlock>редко</TextBlock>
+                    </ComboBox>
+
+                    <ComboBox
+                        x:Name="hands_30"
+                        Grid.Row="29"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom">
+                            <TextBlock>нет</TextBlock>
+                            <TextBlock>постоянно</TextBlock>
+                            <TextBlock>от случая к случаю</TextBlock>
+                            <TextBlock>редко</TextBlock>
+                    </ComboBox>
+
+                    <ComboBox
+                        x:Name="antiseptic_31"
+                        Grid.Row="30"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom">
+                            <TextBlock>да</TextBlock>
+                            <TextBlock>нет</TextBlock>
+                    </ComboBox>
+
+                    <ComboBox
+                        x:Name="gloves_32"
+                        Grid.Row="31"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom">
+                            <TextBlock>да</TextBlock>
+                            <TextBlock>нет</TextBlock>
+                    </ComboBox>
+
+                    <ComboBox
+                        x:Name="distance_33"
+                        Grid.Row="32"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom">
+                            <TextBlock>да</TextBlock>
+                            <TextBlock>нет</TextBlock>
+                    </ComboBox>
+
+                    </Grid>
+
+                <Grid>
+                    <Button HorizontalAlignment="Right" Content="Сохраненные данные" Style="{StaticResource MaterialDesignFlatButton}"/>
+                    <Button HorizontalAlignment="Left" Content="Экспорт в Excel" Click="Button_Click"/>
+                </Grid>
+
+                <Grid>
+                    <TextBlock
+                        Text="* - обязательные поля"
+                        FontStyle="Italic"
+                        FontSize="14"
+                        HorizontalAlignment="Center"
+                        Margin="0 20 0 0"/>
+                </Grid>
+            </StackPanel>
+            </ScrollViewer>
+        </Border>
+    </Grid>
+</Window>
