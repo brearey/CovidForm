@@ -36,7 +36,7 @@ namespace CovidForm
             else
             {
                 var application = new Excel.Application(); //Объявляем переменную с приложением Excel
-                Excel.Workbook workbook = application.Workbooks.Open("C:/Users/brear/source/repos/CovidForm/CovidForm/oprosnik.xlsx");
+                Excel.Workbook workbook = application.Workbooks.Open("oprosnik.xlsx");
 
                 Excel.Worksheet worksheet = (Excel.Worksheet)workbook.Worksheets.get_Item(1);
 
