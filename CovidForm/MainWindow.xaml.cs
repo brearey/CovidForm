@@ -29,7 +29,7 @@ namespace CovidForm
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (isNotEmpty())
+            if (!isNotEmpty())
             {
                 MessageBox.Show("Заполните все поля", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
@@ -78,7 +78,7 @@ namespace CovidForm
                 try
                 {
                     string folder = System.IO.Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName);
-                    string path = folder + "\\result.xlsx";
+                    string path = folder + "\\"+ fio_03.Text.Replace(' ', '_') + System.DateTime.Now.ToString().Replace('.', '_').Replace(':', '_') + ".xlsx";
                     workbook.SaveCopyAs(path);
                     MessageBox.Show(path, "Файл сохранен", MessageBoxButton.OK, MessageBoxImage.Information);
                     System.Diagnostics.Process.Start("explorer.exe", @folder); //Open folder in explorer
