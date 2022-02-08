@@ -40,11 +40,11 @@ namespace CovidForm
             else
             {
                 var application = new Excel.Application(); //Объявляем переменную с приложением Excel
-                Excel.Workbook workbook = application.Workbooks.Open("oprosnik.xlsx");
-                //Excel.Workbook workbook = application.Workbooks.Open("C:/Users/admin/source/repos/CovidForm/123/CovidForm/oprosnik.xlsx");
+                Excel.Workbook workbook = application.Workbooks.Open(System.IO.Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName) + "/Template/oprosnik.xlsx");
+                //Excel.Workbook workbook = application.Workbooks.Open("C:/Users/brear/source/repos/CovidForm/CovidForm/oprosnik.xlsx");
+                
 
                 Excel.Worksheet worksheet = (Excel.Worksheet)workbook.Worksheets.get_Item(1);
-                Excel.Worksheet worksheet_2 = (Excel.Worksheet)workbook.Worksheets.get_Item(3);
 
                 //Запись в поля
                 worksheet.Cells[2][3] = info_date_01.Text; //B3
