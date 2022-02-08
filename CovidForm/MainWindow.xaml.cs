@@ -29,7 +29,7 @@ namespace CovidForm
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (!isNotEmpty())
+            if (false)
             {
                 MessageBox.Show("Заполните все поля", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
@@ -39,6 +39,10 @@ namespace CovidForm
                 Excel.Workbook workbook = application.Workbooks.Open("oprosnik.xlsx");
 
                 Excel.Worksheet worksheet = (Excel.Worksheet)workbook.Worksheets.get_Item(1);
+                Excel.Worksheet worksheet2 = (Excel.Worksheet)workbook.Worksheets.get_Item(3);
+
+                //Запись на второй лист
+                worksheet2.Cells[2][2] = "Абрамов Евгений Семенович"; //Ф.И.О. (полностью) ячейка B2
 
                 //Запись в поля
                 worksheet.Cells[2][3] = info_date_01.Text; //B3
@@ -75,13 +79,17 @@ namespace CovidForm
                 worksheet.Cells[2][35] = gloves_32.Text;
                 worksheet.Cells[2][36] = distance_33.Text;
 
+                
+
                 try
                 {
                     string folder = System.IO.Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName);
-                    string path = folder + "\\"+ fio_03.Text.Replace(' ', '_') + System.DateTime.Now.ToString().Replace('.', '_').Replace(':', '_') + ".xlsx";
+                    string my_folder = System.IO.Path.Combine(folder, "Excel");
+                    System.IO.Directory.CreateDirectory(my_folder);
+                    string path = my_folder + "\\"+ fio_03.Text.Replace(' ', '_') + System.DateTime.Now.ToString().Replace('.', '_').Replace(':', '_') + ".xlsx";
                     workbook.SaveCopyAs(path);
                     MessageBox.Show(path, "Файл сохранен", MessageBoxButton.OK, MessageBoxImage.Information);
-                    System.Diagnostics.Process.Start("explorer.exe", @folder); //Open folder in explorer
+                    System.Diagnostics.Process.Start("explorer.exe", @my_folder); //Open folder in explorer
                     workbook.Close(0);
                     application.Quit();
                 }
