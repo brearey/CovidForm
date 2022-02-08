@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CovidForm"
         mc:Ignorable="d"
-        Title="опросник"
+        Title="Опросник"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         TextElement.FontWeight="Regular"
@@ -20,7 +20,7 @@
                 <DropShadowEffect BlurRadius="30" Color="LightGray" ShadowDepth="0"/>
             </Border.Effect>
             <ScrollViewer>
-            <StackPanel>
+                <StackPanel>
                     <TextBlock
                     FontSize="22"
                     FontWeight="Bold"
@@ -31,87 +31,211 @@
                         <Run>у лиц с подозрением на новую коронавирусную инфекцию</Run>
                     </TextBlock>
 
-                <Grid Margin="20 20 20 40" ShowGridLines="False">
-                    <Grid.RowDefinitions>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition></ColumnDefinition>
-                        <ColumnDefinition></ColumnDefinition>
-                    </Grid.ColumnDefinitions>
-                    <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="0" VerticalAlignment="Center">Дата поступления информации *</Label>
-                    <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center">Номер и дата экстренного извещения *</Label>
-                    <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="2" VerticalAlignment="Center">ФИО *</Label>
-                    <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="3" VerticalAlignment="Center">Дата рождения *</Label>
-                    <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="4" VerticalAlignment="Center">Возраст *</Label>
-                    <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="5" VerticalAlignment="Center">Возрастная группа *</Label>
-                    <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="6" VerticalAlignment="Center">Домашний адрес в РС(Я) *</Label>
-                    <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="7" VerticalAlignment="Center">Мобильный телефон *</Label>
-                    <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="8" VerticalAlignment="Center">Гражданство *</Label>
-                    <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="9" VerticalAlignment="Center">Пол *</Label>
-                    <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="10" VerticalAlignment="Center">Социальный статус *</Label>
-                    <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="11" VerticalAlignment="Center">Место инфицирования *</Label>
-                    <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="12" VerticalAlignment="Center">Диагноз *</Label>
-                    <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="13" VerticalAlignment="Center">Степень тяжести заболевания *</Label>
-                    <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="14" VerticalAlignment="Center">Дата заболевания *</Label>
-                    <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="15" VerticalAlignment="Center">Дата обращения *</Label>
+                    <Grid Margin="20 20 20 40" ShowGridLines="False">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="0" VerticalAlignment="Center">Дата поступления информации *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center">Номер и дата экстренного извещения *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="2" VerticalAlignment="Center">ФИО *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="3" VerticalAlignment="Center">Дата рождения *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="4" VerticalAlignment="Center">Возраст *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="5" VerticalAlignment="Center">Возрастная группа *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="6" VerticalAlignment="Center">Домашний адрес в РС(Я) *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="7" VerticalAlignment="Center">Мобильный телефон *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="8" VerticalAlignment="Center">Гражданство *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="9" VerticalAlignment="Center">Пол *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="10" VerticalAlignment="Center">Социальный статус *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="11" VerticalAlignment="Center">Место инфицирования *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="12" VerticalAlignment="Center">Диагноз *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="13" VerticalAlignment="Center">Степень тяжести заболевания *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="14" VerticalAlignment="Center">Дата заболевания *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="15" VerticalAlignment="Center">Дата обращения *</TextBlock>
 
-                    <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="16" VerticalAlignment="Center">Госпитализация *</Label>
-                    <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="17" VerticalAlignment="Center">Дата госпитализации *</Label>
-                    <TextBlock HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="18" VerticalAlignment="Center">
-                        <Run>Полное название места работы/учебы (курс, группа, класс).</Run>
-                        <LineBreak/>
-                        <Run>Адрес фактического нахождения места работы. Занимаемая должность *</Run>
-                    </TextBlock>
-                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="19" VerticalAlignment="Center">Дата последнего посещения *</Label>
-                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="20" VerticalAlignment="Center">Эпидемиологический анамнез *</Label>
-                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="21" VerticalAlignment="Center">Болел ранее COVID-19 (дата) *</Label>
-                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="22" VerticalAlignment="Center">Выезжал за пределы населенного пункта места жительства *</Label>
-                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="23" VerticalAlignment="Center">Выезжал за пределы субъекта РФ, в том числе на отдых</Label>
-                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="24" VerticalAlignment="Center">Выезжал за рубеж, в том числе на отдых *</Label>
-                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="25" VerticalAlignment="Center">Дата возвращения в место проживания *</Label>
-                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="26" VerticalAlignment="Center">Город, район, населенный пункт (в случае выезда) Название города, района, села</Label>
-                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="27" VerticalAlignment="Center">Оценка эпидемиологических рисков: применение мер личной и общественной профилактики *</Label>
-                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="28" VerticalAlignment="Center">Соблюдение масочного режима *</Label>
-                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="29" VerticalAlignment="Center">Проведение гигиенической обработки рук *</Label>
-                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="30" VerticalAlignment="Center">Использование антисептиков для обработки рук *</Label>
-                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="31" VerticalAlignment="Center">Использование перчаток да/нет *</Label>
-                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="32" VerticalAlignment="Center">Соблюдение режима дистанцирования *</Label>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="16" VerticalAlignment="Center">Госпитализация *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="17" VerticalAlignment="Center">Дата госпитализации *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="18" VerticalAlignment="Center">
+                            Полное название места работы/учебы (курс, группа, класс).Адрес фактического нахождения места работы. Занимаемая должность *
+                        </TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="19" VerticalAlignment="Center">Дата последнего посещения *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="20" VerticalAlignment="Center">Эпидемиологический анамнез *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="21" VerticalAlignment="Center">Болел ранее COVID-19 (дата) *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="22" VerticalAlignment="Center">Выезжал за пределы населенного пункта места жительства *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="23" VerticalAlignment="Center">Выезжал за пределы субъекта РФ, в том числе на отдых</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="24" VerticalAlignment="Center">Выезжал за рубеж, в том числе на отдых *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="25" VerticalAlignment="Center">Дата возвращения в место проживания *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="26" VerticalAlignment="Center">Город, район, населенный пункт (в случае выезда) Название города, района, села</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="27" VerticalAlignment="Center">Оценка эпидемиологических рисков: применение мер личной и общественной профилактики *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="28" VerticalAlignment="Center">Соблюдение масочного режима *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="29" VerticalAlignment="Center">Проведение гигиенической обработки рук *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="30" VerticalAlignment="Center">Использование антисептиков для обработки рук *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="31" VerticalAlignment="Center">Использование перчаток да/нет *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="32" VerticalAlignment="Center">Соблюдение режима дистанцирования *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="33" VerticalAlignment="Center">Перемещение общественным транспортом *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="34" VerticalAlignment="Center">Посещение торговых объектов *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="35" VerticalAlignment="Center">Посещение объектов общественного питания *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="36" VerticalAlignment="Center">Посещение парикмахерских, салонов красоты *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="37" VerticalAlignment="Center">Посещение амбулаторных медицинских организаций *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="38" VerticalAlignment="Center">Посещение других объектов с массовым посещением населения (МФЦ, банки, почта и т.д.) *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="39" VerticalAlignment="Center">Получение стационарной медицинской помощи *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="40" VerticalAlignment="Center">Проживание в общежитии, гостинице, хостеле *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="41" VerticalAlignment="Center">Посещение родственников, друзей *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="42" VerticalAlignment="Center">Участие в частных мероприятиях со скопление людей (семейные торжества, похороны и др.) *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="43" VerticalAlignment="Center">Причина обследования на COVID-19 *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="44" VerticalAlignment="Center">Дата отбора пробы (положительной) на COVID-19 *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="45" VerticalAlignment="Center">Дата первичного положительного результата на COVID-19 *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="46" VerticalAlignment="Center">Дата подтверждения положительного результата на COVID-19 *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="47" VerticalAlignment="Center">Организация, подтвердившая положительный результат на COVID-2019 *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="48" VerticalAlignment="Center">Результаты исследования на другие инфекции *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="49" VerticalAlignment="Center">Наличие симптомов заболевания *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="50" VerticalAlignment="Center">Температура *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="51" VerticalAlignment="Center">Другие симптомы *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="52" VerticalAlignment="Center">Дата заболевания (при наличии симптомов) *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="53" VerticalAlignment="Center">Дата обращения *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="54" VerticalAlignment="Center">Место первичного обращения *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="55" VerticalAlignment="Center">Предварительный диагноз *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="56" VerticalAlignment="Center">Место установления предварительного диагноза *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="57" VerticalAlignment="Center">Госпитализация *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="58" VerticalAlignment="Center">Дата госпитализации*</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="59" VerticalAlignment="Center">Место госпитализации *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="60" VerticalAlignment="Center">Диагноз *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="61" VerticalAlignment="Center">Степень тяжести заболевания *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="62" VerticalAlignment="Center">Сопутствующая патология *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="63" VerticalAlignment="Center">Беременность *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="64" VerticalAlignment="Center">Вакцинирован против коронавирусной инфекции *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="65" VerticalAlignment="Center">Название вакцины *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="66" VerticalAlignment="Center">Дата I вакцинации *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="67" VerticalAlignment="Center">День заболевания после вакцинации V1 *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="68" VerticalAlignment="Center">Дата II вакцинации *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="69" VerticalAlignment="Center">День заболевания после вакцинации V2 *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="70" VerticalAlignment="Center">Вакцинирован от гриппа в сезон 2021-22  *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="71" VerticalAlignment="Center">Ревакцинация:название вакцины *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="72" VerticalAlignment="Center">Дата ревакцинации *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="73" VerticalAlignment="Center">Диагноз заключительный *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="74" VerticalAlignment="Center">Исход заболевания *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="75" VerticalAlignment="Center">Дата выздоровления, летального исхода *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="76" VerticalAlignment="Center">Наличие контактов с больными или подозрительными COVID-19 *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="77" VerticalAlignment="Center">Категория контакта *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="78" VerticalAlignment="Center">Общее число контактных с заболевшим: *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="79" VerticalAlignment="Center">Из них выявлено лиц с COVID-19 *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="80" VerticalAlignment="Center">Из них в бытовых очагах *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="81" VerticalAlignment="Center">Из них в очагах по месту работы *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="82" VerticalAlignment="Center">Из них в очагах по месту учебы/воспитания *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="83" VerticalAlignment="Center">Из них в очагах в социальных учреждениях *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="84" VerticalAlignment="Center">Из них в очагах на транспорте *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="85" VerticalAlignment="Center">Из них в других организованных коллективах *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="86" VerticalAlignment="Center">Из них в очагах в медицинских организациях *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="87" VerticalAlignment="Center">Число лиц, снятых с медицинского наблюдения *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="88" VerticalAlignment="Center">Дата окончания карантинных мероприятий *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="89" VerticalAlignment="Center">Мероприятия по контактным лицам *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="90" VerticalAlignment="Center">Результат мероприятий по контактным лицам *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="91" VerticalAlignment="Center">Дом (каменный, деревянный), этажность, сколько подъездов, организации в здании *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="92" VerticalAlignment="Center">Подъезд *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="93" VerticalAlignment="Center">Этаж *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="94" VerticalAlignment="Center">Количество квартир на этаже *</TextBlock>
 
-                    <DatePicker
-                        MinWidth="600"
+                        <DatePicker
+                        MinWidth="500"
                         x:Name="info_date_01"
                         Grid.Row="0"
                         Grid.Column="1"
@@ -119,74 +243,76 @@
                         Style="{StaticResource MaterialDesignDatePicker}"
                         Language="ru"
                         SelectedDate="{Binding StartDate}" />
-                    <TextBox
+
+                        <TextBox
                         x:Name="number_and_date_02"
                         Grid.Row="1"
                         Grid.Column="1"
                         VerticalAlignment="Bottom"
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}">
-                    </TextBox>
-                    
-                    <TextBox
+                        </TextBox>
+
+                        <TextBox
                         x:Name="fio_03"
                         Grid.Row="2"
                         Grid.Column="1"
                         VerticalAlignment="Bottom"
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
 
-                    <DatePicker
+                        <DatePicker
                         x:Name="birthday_date_04"
-                        SelectedDate="11/22/88"
                         Grid.Row="3"
                         Grid.Column="1"
                         VerticalAlignment="Bottom"
                         Style="{StaticResource MaterialDesignDatePicker}"
-                        Language="ru"/>
-                    <TextBox
+                        Language="ru"
+                        SelectedDate="{Binding StartDate}" />
+
+                        <TextBox
                         x:Name="age_05"
                         Grid.Row="4"
                         Grid.Column="1"
                         VerticalAlignment="Bottom"
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
 
-                    <TextBox
+                        <TextBox
                         x:Name="age_group_06"
                         Grid.Row="5"
                         Grid.Column="1"
                         VerticalAlignment="Bottom"
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
 
-                    <TextBox
+                        <TextBox
                         x:Name="address_home_07"
                         Grid.Row="6"
                         Grid.Column="1"
                         VerticalAlignment="Bottom"
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
 
-                    <TextBox
+                        <TextBox
                         x:Name="mobile_phone_08"
                         Grid.Row="7"
                         Grid.Column="1"
                         VerticalAlignment="Bottom"
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
 
-                    <TextBox
+                        <TextBox
                         x:Name="citizen_09"
                         Grid.Row="8"
                         Grid.Column="1"
                         VerticalAlignment="Bottom"
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
 
-                    <ComboBox
+                        <ComboBox
                         x:Name="sex_10"
                         Grid.Row="9"
                         Grid.Column="1"
                         VerticalAlignment="Bottom">
                             <TextBlock>Мужской</TextBlock>
                             <TextBlock>Женский</TextBlock>
-                    </ComboBox>
+                        </ComboBox>
 
-                    <ComboBox
+                        <ComboBox
                         x:Name="social_status_11"
                         Grid.Row="10"
                         Grid.Column="1"
@@ -211,9 +337,9 @@
                             <TextBlock>Проживающие в организациях социальной защиты</TextBlock>
                             <TextBlock>Находящиеся в пенитенциарных учреждениях</TextBlock>
                             <TextBlock>Другое</TextBlock>
-                    </ComboBox>
+                        </ComboBox>
 
-                    <ComboBox
+                        <ComboBox
                         x:Name="infection_site_12"
                         Grid.Row="11"
                         Grid.Column="1"
@@ -229,7 +355,7 @@
                             <TextBlock>В транспорте (самолет, поезд, автобус, такси)</TextBlock>
                         </ComboBox>
 
-                    <ComboBox
+                        <ComboBox
                         x:Name="diagnosis_13"
                         Grid.Row="12"
                         Grid.Column="1"
@@ -239,9 +365,9 @@
                             <TextBlock>Носитель</TextBlock>
                             <TextBlock>Подозрение на COVID</TextBlock>
 
-                    </ComboBox>
+                        </ComboBox>
 
-                    <ComboBox
+                        <ComboBox
                         x:Name="disease_severity_14"
                         Grid.Row="13"
                         Grid.Column="1"
@@ -250,9 +376,9 @@
                             <TextBlock>Легкой степени тяжести</TextBlock>
                             <TextBlock>Средней степени тяжести</TextBlock>
                             <TextBlock>Тяжелой степени тяжести</TextBlock>
-                    </ComboBox>
+                        </ComboBox>
 
-                    <DatePicker
+                        <DatePicker
                         x:Name="illness_date_15"
                         Grid.Row="14"
                         Grid.Column="1"
@@ -261,7 +387,7 @@
                         Language="ru"
                         SelectedDate="{Binding StartDate}" />
 
-                    <DatePicker
+                        <DatePicker
                         x:Name="application_date_16"
                         Grid.Row="15"
                         Grid.Column="1"
@@ -270,16 +396,16 @@
                         Language="ru"
                         SelectedDate="{Binding StartDate}" />
 
-                    <ComboBox
+                        <ComboBox
                         x:Name="hospital_17"
                         Grid.Row="16"
                         Grid.Column="1"
                         VerticalAlignment="Bottom">
                             <TextBlock>Госпитализация</TextBlock>
                             <TextBlock>Амбулаторное</TextBlock>
-                    </ComboBox>
+                        </ComboBox>
 
-                    <DatePicker
+                        <DatePicker
                         x:Name="hospital_date_18"
                         Grid.Row="17"
                         Grid.Column="1"
@@ -288,14 +414,14 @@
                         Language="ru"
                         SelectedDate="{Binding StartDate}" />
 
-                    <TextBox
+                        <TextBox
                         x:Name="work_info_19"
                         Grid.Row="18"
                         Grid.Column="1"
                         VerticalAlignment="Bottom"
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
 
-                    <DatePicker
+                        <DatePicker
                         x:Name="date_last_visit_20"
                         Grid.Row="19"
                         Grid.Column="1"
@@ -304,14 +430,14 @@
                         Language="ru"
                         SelectedDate="{Binding StartDate}" />
 
-                    <TextBox
+                        <TextBox
                         x:Name="epidem_history_21"
                         Grid.Row="20"
                         Grid.Column="1"
                         VerticalAlignment="Bottom"
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
 
-                    <DatePicker
+                        <DatePicker
                         x:Name="date_before_covid_22"
                         Grid.Row="21"
                         Grid.Column="1"
@@ -320,28 +446,28 @@
                         Language="ru"
                         SelectedDate="{Binding StartDate}" />
 
-                    <TextBox
+                        <TextBox
                         x:Name="outside_vilage_23"
                         Grid.Row="22"
                         Grid.Column="1"
                         VerticalAlignment="Bottom"
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
 
-                    <TextBox
+                        <TextBox
                         x:Name="outside_subject_24"
                         Grid.Row="23"
                         Grid.Column="1"
                         VerticalAlignment="Bottom"
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
 
-                    <TextBox
+                        <TextBox
                         x:Name="outside_country_25"
                         Grid.Row="24"
                         Grid.Column="1"
                         VerticalAlignment="Bottom"
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
 
-                    <DatePicker
+                        <DatePicker
                         x:Name="date_return_26"
                         Grid.Row="25"
                         Grid.Column="1"
@@ -350,86 +476,655 @@
                         Language="ru"
                         SelectedDate="{Binding StartDate}" />
 
-                    <TextBox
+                        <TextBox
                         x:Name="city_district_27"
                         Grid.Row="26"
                         Grid.Column="1"
                         VerticalAlignment="Bottom"
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
 
-                    <TextBox
+                        <TextBox
                         x:Name="risk_28"
                         Grid.Row="27"
                         Grid.Column="1"
                         VerticalAlignment="Bottom"
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
 
-                    <ComboBox
+                        <ComboBox
                         x:Name="mask_29"
                         Grid.Row="28"
                         Grid.Column="1"
                         VerticalAlignment="Bottom">
-                            <TextBlock>нет</TextBlock>
-                            <TextBlock>соблюдал повсеместно</TextBlock>
-                            <TextBlock>только при посещении закрытых пространств</TextBlock>
-                            <TextBlock>от случая к случаю</TextBlock>
-                            <TextBlock>редко</TextBlock>
-                    </ComboBox>
+                            <TextBlock>Нет</TextBlock>
+                            <TextBlock>Соблюдал повсеместно</TextBlock>
+                            <TextBlock>Только при посещении закрытых пространств</TextBlock>
+                            <TextBlock>От случая к случаю</TextBlock>
+                            <TextBlock>Редко</TextBlock>
+                        </ComboBox>
 
-                    <ComboBox
+                        <ComboBox
                         x:Name="hands_30"
                         Grid.Row="29"
                         Grid.Column="1"
                         VerticalAlignment="Bottom">
-                            <TextBlock>нет</TextBlock>
-                            <TextBlock>постоянно</TextBlock>
-                            <TextBlock>от случая к случаю</TextBlock>
-                            <TextBlock>редко</TextBlock>
-                    </ComboBox>
+                            <TextBlock>Нет</TextBlock>
+                            <TextBlock>Постоянно</TextBlock>
+                            <TextBlock>От случая к случаю</TextBlock>
+                            <TextBlock>Редко</TextBlock>
+                        </ComboBox>
 
-                    <ComboBox
+                        <ComboBox
                         x:Name="antiseptic_31"
                         Grid.Row="30"
                         Grid.Column="1"
                         VerticalAlignment="Bottom">
-                            <TextBlock>да</TextBlock>
-                            <TextBlock>нет</TextBlock>
-                    </ComboBox>
+                            <TextBlock>Да</TextBlock>
+                            <TextBlock>Нет</TextBlock>
+                        </ComboBox>
 
-                    <ComboBox
+                        <ComboBox
                         x:Name="gloves_32"
                         Grid.Row="31"
                         Grid.Column="1"
                         VerticalAlignment="Bottom">
-                            <TextBlock>да</TextBlock>
-                            <TextBlock>нет</TextBlock>
-                    </ComboBox>
+                            <TextBlock>Да</TextBlock>
+                            <TextBlock>Нет</TextBlock>
+                        </ComboBox>
 
-                    <ComboBox
+                        <ComboBox
                         x:Name="distance_33"
                         Grid.Row="32"
                         Grid.Column="1"
                         VerticalAlignment="Bottom">
-                            <TextBlock>да</TextBlock>
-                            <TextBlock>нет</TextBlock>
-                    </ComboBox>
+                            <TextBlock>Да</TextBlock>
+                            <TextBlock>Нет</TextBlock>
+                        </ComboBox>
+
+                        <ComboBox
+                        x:Name="bus_34"
+                        Grid.Row="33"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom">
+                            <TextBlock>Да (такси)</TextBlock>
+                            <TextBlock>Да (маршрутные автобусы)</TextBlock>
+                            <TextBlock>Да (такси и маршрутные автобусы)</TextBlock>
+                            <TextBlock>Нет</TextBlock>
+                            <TextBlock>Личный транспорт</TextBlock>
+                        </ComboBox>
+
+                        <ComboBox
+                        x:Name="torg_35"
+                        Grid.Row="34"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom">
+                            <TextBlock>Нет</TextBlock>
+                            <TextBlock>Ежедневно</TextBlock>
+                            <TextBlock>Не более 2-3 раз</TextBlock>
+                        </ComboBox>
+
+                        <ComboBox
+                        x:Name="pitanie_36"
+                        Grid.Row="35"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom">
+                            <TextBlock>Нет</TextBlock>
+                            <TextBlock>Однократно</TextBlock>
+                            <TextBlock>Несколько раз</TextBlock>
+                        </ComboBox>
+
+                        <ComboBox
+                        x:Name="krasota_37"
+                        Grid.Row="36"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom">
+                            <TextBlock>Нет</TextBlock>
+                            <TextBlock>Однократно</TextBlock>
+                            <TextBlock>Несколько раз</TextBlock>
+                        </ComboBox>
+
+                        <ComboBox
+                        x:Name="med_38"
+                        Grid.Row="37"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom">
+                            <TextBlock>Нет</TextBlock>
+                            <TextBlock>Однократно</TextBlock>
+                            <TextBlock>Несколько раз</TextBlock>
+                        </ComboBox>
+
+                        <ComboBox
+                        x:Name="mass_naseleniya_39"
+                        Grid.Row="38"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom">
+                            <TextBlock>Нет</TextBlock>
+                            <TextBlock>Однократно</TextBlock>
+                            <TextBlock>Несколько раз</TextBlock>
+                        </ComboBox>
+
+                        <ComboBox
+                        x:Name="inpatient_care_40"
+                        Grid.Row="39"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom">
+                            <TextBlock>Нет</TextBlock>
+                            <TextBlock>Нахождение в стационаре до 7 дней</TextBlock>
+                            <TextBlock>Находение в стационаре более 7 дней</TextBlock>
+                        </ComboBox>
+
+                        <ComboBox
+                        x:Name="dormitory_41"
+                        Grid.Row="40"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom">
+                            <TextBlock>Да</TextBlock>
+                            <TextBlock>Нет</TextBlock>
+                        </ComboBox>
+
+                        <ComboBox
+                        x:Name="relatives_42"
+                        Grid.Row="41"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom">
+                            <TextBlock>Да</TextBlock>
+                            <TextBlock>Нет</TextBlock>
+                        </ComboBox>
+
+                        <ComboBox
+                        x:Name="private_43"
+                        Grid.Row="42"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom">
+                            <TextBlock>Да</TextBlock>
+                            <TextBlock>Нет</TextBlock>
+                        </ComboBox>
+
+                        <ComboBox
+                        x:Name="cause_44"
+                        Grid.Row="43"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom">
+                            <TextBlock>Обследование</TextBlock>
+                            <TextBlock>Контакт</TextBlock>
+                            <TextBlock>Самообращение</TextBlock>
+                            <TextBlock>Скриннинг</TextBlock>
+                            <TextBlock>ОРВИ</TextBlock>
+                            <TextBlock>Пневмония</TextBlock>
+                            <TextBlock>Госпитализация</TextBlock>
+                        </ComboBox>
+
+                        <DatePicker
+                        x:Name="date_selection_45"
+                        Grid.Row="44"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignDatePicker}"
+                        Language="ru"
+                        SelectedDate="{Binding StartDate}" />
+
+                        <DatePicker
+                        x:Name="date_result_46"
+                        Grid.Row="45"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignDatePicker}"
+                        Language="ru"
+                        SelectedDate="{Binding StartDate}" />
+
+                        <DatePicker
+                        x:Name="date_confirmation_47"
+                        Grid.Row="46"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignDatePicker}"
+                        Language="ru"
+                        SelectedDate="{Binding StartDate}" />
+
+                        <ComboBox
+                        x:Name="organization_48"
+                        Grid.Row="47"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom">
+                            <TextBlock>Центр СПИД</TextBlock>
+                            <TextBlock>ФБУЗ «ЦГ и Э в РС(Я)»</TextBlock>
+                            <TextBlock>ГАУ РС (Я) МЦ г. Якутска</TextBlock>
+                            <TextBlock>ГАУ РС (Я) РКБ №3</TextBlock>
+                            <TextBlock>ГБУ РС (Я) ЯРКБ</TextBlock>
+                            <TextBlock>ГБУ РС (Я) ЯРОД</TextBlock>
+                            <TextBlock>ГАУ РС (Я) ЯГБ №3</TextBlock>
+                            <TextBlock>Клиника СВФУ</TextBlock>
+                            <TextBlock>НПЦ Фтизиатрия</TextBlock>
+                            <TextBlock>ГАУ РС(Я) РБ№1-НЦМ</TextBlock>
+                            <TextBlock>ГБУ РС(Я) "ЯГБ №2"</TextBlock>
+                            <TextBlock>ООО "Центромед"</TextBlock>
+                            <TextBlock>Поликлиника №1</TextBlock>
+                        </ComboBox>
+
+                        <TextBox
+                        x:Name="other_infections_49"
+                        Grid.Row="48"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                        <ComboBox
+                        x:Name="symptoms_50"
+                        Grid.Row="49"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom">
+                            <TextBlock>Да</TextBlock>
+                            <TextBlock>Нет</TextBlock>
+                        </ComboBox>
+
+                        <ComboBox
+                        x:Name="temperature_51"
+                        Grid.Row="50"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom">
+                            <TextBlock>Нормальная 36</TextBlock>
+                            <TextBlock>Субфебрильная 37-37</TextBlock>
+                            <TextBlock>Фебрильная 38-38</TextBlock>
+                            <TextBlock>Гипертермия 39 и более</TextBlock>
+                            <TextBlock>Нет данных</TextBlock>
+                        </ComboBox>
+
+                        <TextBox
+                        x:Name="other_symptoms_52"
+                        Grid.Row="51"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                        <DatePicker
+                        x:Name="date_disease_53"
+                        Grid.Row="52"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignDatePicker}"
+                        Language="ru"
+                        SelectedDate="{Binding StartDate}" />
+
+                        <DatePicker
+                        x:Name="date_appeal_54"
+                        Grid.Row="53"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignDatePicker}"
+                        Language="ru"
+                        SelectedDate="{Binding StartDate}" />
+
+                        <ComboBox
+                        x:Name="place_appeal_55"
+                        Grid.Row="54"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom">
+                            <TextBlock>Амбулаторно-поликлиническая сеть</TextBlock>
+                            <TextBlock>Скорая помощь</TextBlock>
+                            <TextBlock>Стационар неинфекционного профиля</TextBlock>
+                            <TextBlock>Стационар инфекционного профиля</TextBlock>
+                            <TextBlock>Прочее</TextBlock>
+                        </ComboBox>
+
+                        <TextBox
+                        x:Name="pleliminary_diagnosis_56"
+                        Grid.Row="55"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                        <ComboBox
+                        x:Name="place_estab_57"
+                        Grid.Row="56"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom">
+                            <TextBlock>Амбулаторно-поликлиническая сеть</TextBlock>
+                            <TextBlock>Скорая помощь</TextBlock>
+                            <TextBlock>Стационар неинфекционного профиля</TextBlock>
+                            <TextBlock>Стационар инфекционного профиля</TextBlock>
+                            <TextBlock>Прочее</TextBlock>
+                        </ComboBox>
+
+                        <TextBox
+                        x:Name="hospitalzation_58"
+                        Grid.Row="57"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                        <DatePicker
+                        x:Name="date_hospitalzation_59"
+                        Grid.Row="58"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignDatePicker}"
+                        Language="ru"
+                        SelectedDate="{Binding StartDate}" />
+
+                        <TextBox
+                        x:Name="place_hospitalzation_60"
+                        Grid.Row="59"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                        <TextBox
+                        x:Name="diagnosis_61"
+                        Grid.Row="60"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                        <TextBox
+                        x:Name="severity_62"
+                        Grid.Row="61"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                        <ComboBox
+                        x:Name="pathology_63"
+                        Grid.Row="62"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom">
+                            <TextBlock>Нет</TextBlock>
+                            <TextBlock>Нет данных</TextBlock>
+                            <TextBlock>Заболевания органов дыхания</TextBlock>
+                            <TextBlock>Заболевания сердечно-сосудистой системы</TextBlock>
+                            <TextBlock>Патология эндокринной системы</TextBlock>
+                            <TextBlock>Онкологическая патология</TextBlock>
+                            <TextBlock>Другое</TextBlock>
+                        </ComboBox>
+
+                        <TextBox
+                        x:Name="pregnancy_64"
+                        Grid.Row="63"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                        <ComboBox
+                        x:Name="vaccinated_65"
+                        Grid.Row="64"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom">
+                            <TextBlock>Да</TextBlock>
+                            <TextBlock>Нет</TextBlock>
+                        </ComboBox>
+
+                        <TextBox
+                        x:Name="name_vaccine_66"
+                        Grid.Row="65"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                        <DatePicker
+                        x:Name="date_onevacc_67"
+                        Grid.Row="66"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignDatePicker}"
+                        Language="ru"
+                        SelectedDate="{Binding StartDate}" />
+
+                        <DatePicker
+                        x:Name="day_illnessone_68"
+                        Grid.Row="67"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignDatePicker}"
+                        Language="ru"
+                        SelectedDate="{Binding StartDate}" />
+
+
+                        <DatePicker
+                        x:Name="date_twovacc_69"
+                        Grid.Row="68"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignDatePicker}"
+                        Language="ru"
+                        SelectedDate="{Binding StartDate}" />
+
+                        <DatePicker
+                        x:Name="day_illnesstwo_70"
+                        Grid.Row="69"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignDatePicker}"
+                        Language="ru"
+                        SelectedDate="{Binding StartDate}" />
+
+                        <ComboBox
+                        x:Name="flu_vaccinated_71"
+                        Grid.Row="70"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom">
+                            <TextBlock>Да</TextBlock>
+                            <TextBlock>Нет</TextBlock>
+                        </ComboBox>
+
+                        <ComboBox
+                        x:Name="revaccinated_72"
+                        Grid.Row="71"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom">
+                            <TextBlock>Да</TextBlock>
+                            <TextBlock>Нет</TextBlock>
+                        </ComboBox>
+
+                        <DatePicker
+                        x:Name="date_revacc_73"
+                        Grid.Row="72"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignDatePicker}"
+                        Language="ru"
+                        SelectedDate="{Binding StartDate}" />
+
+                        <TextBox
+                        x:Name="final_diagnosis_74"
+                        Grid.Row="73"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                        <TextBox
+                        x:Name="outcome_75"
+                        Grid.Row="74"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                        <DatePicker
+                        x:Name="date_recovery_76"
+                        Grid.Row="75"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignDatePicker}"
+                        Language="ru"
+                        SelectedDate="{Binding StartDate}" />
+
+                        <TextBox
+                        x:Name="contact_77"
+                        Grid.Row="76"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                        <TextBox
+                        x:Name="contact_category_78"
+                        Grid.Row="77"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                        <TextBox
+                        x:Name="total_contact_79"
+                        Grid.Row="78"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                        <TextBox
+                        x:Name="persons_covid_80"
+                        Grid.Row="79"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                        <TextBox
+                        x:Name="household_81"
+                        Grid.Row="80"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                        <TextBox
+                        x:Name="place_work_82"
+                        Grid.Row="81"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                        <TextBox
+                        x:Name="place_education_83"
+                        Grid.Row="82"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                        <TextBox
+                        x:Name="social_contact_84"
+                        Grid.Row="83"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                        <TextBox
+                        x:Name="transport_contact_85"
+                        Grid.Row="84"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                        <TextBox
+                        x:Name="other_organi_86"
+                        Grid.Row="85"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                        <TextBox
+                        x:Name="medical_organi_87"
+                        Grid.Row="86"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                        <TextBox
+                        x:Name="supervision_medical_88"
+                        Grid.Row="87"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                        <DatePicker
+                        x:Name="date_quarantine_89"
+                        Grid.Row="88"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignDatePicker}"
+                        Language="ru"
+                        SelectedDate="{Binding StartDate}" />
+
+                        <TextBox
+                        x:Name="events_contact_90"
+                        Grid.Row="89"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                        <TextBox
+                        x:Name="result_contact_91"
+                        Grid.Row="90"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                        <ComboBox
+                        x:Name="house_92"
+                        Grid.Row="91"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom">
+                            <TextBlock>Каменный благоустроенный дом</TextBlock>
+                            <TextBlock>Деревянный благоустроенный дом</TextBlock>
+                            <TextBlock>Частный дом</TextBlock>
+                        </ComboBox>
+
+                        <ComboBox
+                        x:Name="entrance_93"
+                        Grid.Row="92"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom">
+                            <TextBlock>1 подъезд</TextBlock>
+                            <TextBlock>2 подъезд</TextBlock>
+                            <TextBlock>3 подъезд</TextBlock>
+                            <TextBlock>4 подъезд</TextBlock>
+                            <TextBlock>5 подъезд</TextBlock>
+                            <TextBlock>6 подъезд</TextBlock>
+                            <TextBlock>7 подъезд</TextBlock>
+                            <TextBlock>8 подъезд</TextBlock>
+                            <TextBlock>9 подъезд</TextBlock>
+                            <TextBlock>10 подъезд</TextBlock>
+                        </ComboBox>
+
+                        <ComboBox
+                        x:Name="floor_94"
+                        Grid.Row="93"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom">
+                            <TextBlock>1  этаж</TextBlock>
+                            <TextBlock>2  этаж</TextBlock>
+                            <TextBlock>3  этаж</TextBlock>
+                            <TextBlock>4  этаж</TextBlock>
+                            <TextBlock>5  этаж</TextBlock>
+                            <TextBlock>6  этаж</TextBlock>
+                            <TextBlock>7  этаж</TextBlock>
+                            <TextBlock>8  этаж</TextBlock>
+                            <TextBlock>9  этаж</TextBlock>
+                            <TextBlock>10 этаж</TextBlock>
+                            <TextBlock>11 этаж</TextBlock>
+                            <TextBlock>12  этаж</TextBlock>
+                            <TextBlock>13  этаж</TextBlock>
+                            <TextBlock>14  этаж</TextBlock>
+                            <TextBlock>15  этаж</TextBlock>
+                            <TextBlock>16  этаж</TextBlock>
+                        </ComboBox>
+
+                        <TextBox
+                        x:Name="apartments_95"
+                        Grid.Row="94"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
 
                     </Grid>
 
-                <Grid>
-                    <Button HorizontalAlignment="Right" Content="Сохраненные данные" Style="{StaticResource MaterialDesignFlatButton}"/>
-                    <Button HorizontalAlignment="Left" Content="Экспорт в Excel" Click="Button_Click"/>
-                </Grid>
+                    <Grid>
+                        <Button HorizontalAlignment="Right" Content="Сохраненные данные" IsEnabled="False" Style="{StaticResource MaterialDesignFlatButton}"/>
+                        <Button HorizontalAlignment="Left" Content="Перейти в Контактные" Click="Button_Click"/>
+                    </Grid>
 
-                <Grid>
-                    <TextBlock
+                    <Grid>
+                        <TextBlock
                         Text="* - обязательные поля"
                         FontStyle="Italic"
                         FontSize="14"
                         HorizontalAlignment="Center"
                         Margin="0 20 0 0"/>
-                </Grid>
-            </StackPanel>
+                    </Grid>
+                </StackPanel>
             </ScrollViewer>
         </Border>
     </Grid>
