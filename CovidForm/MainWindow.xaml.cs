@@ -40,7 +40,7 @@ namespace CovidForm
             else
             {
                 var application = new Excel.Application(); //Объявляем переменную с приложением Excel
-                Excel.Workbook workbook = application.Workbooks.Open(System.IO.Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName) + "/Template/oprosnik.xlsx");
+                Excel.Workbook workbook = application.Workbooks.Open(System.IO.Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName) + "/oprosnik.xlsx");
                 //Excel.Workbook workbook = application.Workbooks.Open("C:/Users/brear/source/repos/CovidForm/CovidForm/oprosnik.xlsx");
                 
 
