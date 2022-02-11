@@ -125,19 +125,22 @@
                         VerticalAlignment="Bottom"
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
 
-                        <TextBox
+                        <ComboBox
                         x:Name="floor_contact_02"
                         Grid.Row="1"
                         Grid.Column="1"
-                        VerticalAlignment="Bottom"
-                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                        VerticalAlignment="Bottom">
+                            <TextBlock>Мужской</TextBlock>
+                            <TextBlock>Женский</TextBlock>
+                        </ComboBox>
 
-                        <TextBox
+                        <DatePicker
                         x:Name="date_birth_contact_03"
                         Grid.Row="2"
                         Grid.Column="1"
                         VerticalAlignment="Bottom"
-                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                        Style="{StaticResource MaterialDesignDatePicker}"
+                        Language="ru"/>
 
                         <TextBox
                         x:Name="address_contact_04"
@@ -146,14 +149,12 @@
                         VerticalAlignment="Bottom"
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
 
-
                         <TextBox
                         x:Name="place_work_contact_05"
                         Grid.Row="4"
                         Grid.Column="1"
                         VerticalAlignment="Bottom"
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
-
 
                         <TextBox
                         x:Name="contact_number_06"
@@ -162,21 +163,21 @@
                         VerticalAlignment="Bottom"
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
 
-
-                        <TextBox
+                        <DatePicker
                         x:Name="date_sick_07"
                         Grid.Row="6"
                         Grid.Column="1"
                         VerticalAlignment="Bottom"
-                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                        Style="{StaticResource MaterialDesignDatePicker}"
+                        Language="ru"/>
 
-
-                        <TextBox
+                        <DatePicker
                         x:Name="date_end_isolation_08"
                         Grid.Row="7"
                         Grid.Column="1"
                         VerticalAlignment="Bottom"
-                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                        Style="{StaticResource MaterialDesignDatePicker}"
+                        Language="ru"/>
 
                         <TextBox
                         x:Name="name_sick_contact_09"
@@ -192,26 +193,32 @@
                         VerticalAlignment="Bottom"
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
 
-                        <TextBox
+                        <DatePicker
                         x:Name="date_decree_11"
                         Grid.Row="10"
                         Grid.Column="1"
                         VerticalAlignment="Bottom"
-                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                        Style="{StaticResource MaterialDesignDatePicker}"
+                        Language="ru"/>
 
-                        <TextBox
+                        <ComboBox
                         x:Name="sick_contact_12"
                         Grid.Row="11"
                         Grid.Column="1"
-                        VerticalAlignment="Bottom"
-                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                        VerticalAlignment="Bottom">
+                            <TextBlock>Больной</TextBlock>
+                            <TextBlock>Контактный</TextBlock>
+                        </ComboBox>
 
-                        <TextBox
+                        <ComboBox
                         x:Name="self_observatory_13"
                         Grid.Row="12"
                         Grid.Column="1"
-                        VerticalAlignment="Bottom"
-                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                        VerticalAlignment="Bottom">
+                            <TextBlock>Самоизоляция</TextBlock>
+                            <TextBlock>Обсерватор</TextBlock>
+                            <TextBlock>Госпитализирован</TextBlock>
+                        </ComboBox>
 
                         <TextBox
                         x:Name="med_organi_contact_14"
@@ -227,19 +234,21 @@
                         VerticalAlignment="Bottom"
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
 
-                        <TextBox
+                        <DatePicker
                         x:Name="date_firtsvacc_contact_16"
                         Grid.Row="15"
                         Grid.Column="1"
                         VerticalAlignment="Bottom"
-                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                        Style="{StaticResource MaterialDesignDatePicker}"
+                        Language="ru"/>
 
-                        <TextBox
+                        <DatePicker
                         x:Name="date_secondvacc_contact_17"
                         Grid.Row="16"
                         Grid.Column="1"
                         VerticalAlignment="Bottom"
-                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                        Style="{StaticResource MaterialDesignDatePicker}"
+                        Language="ru"/>
 
                         <TextBox
                         x:Name="revacc_contact_18"

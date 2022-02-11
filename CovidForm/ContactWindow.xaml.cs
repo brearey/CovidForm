@@ -71,22 +71,22 @@ namespace CovidForm
                 lvUsers.Items.Refresh();
 
                 name_contact_01.Clear();
-                floor_contact_02.Clear();
-                date_birth_contact_03.Clear();
+                floor_contact_02.SelectedItem = null;
+                date_birth_contact_03.SelectedDate = null;
                 address_contact_04.Clear();
                 place_work_contact_05.Clear();
                 contact_number_06.Clear();
-                date_sick_07.Clear();
-                date_end_isolation_08.Clear();
+                date_sick_07.SelectedDate = null;
+                date_end_isolation_08.SelectedDate = null;
                 name_sick_contact_09.Clear();
                 num_decree_10.Clear();
-                date_decree_11.Clear();
-                sick_contact_12.Clear();
-                self_observatory_13.Clear();
+                date_decree_11.SelectedDate = null;
+                sick_contact_12.SelectedItem = null;
+                self_observatory_13.SelectedItem = null;
                 med_organi_contact_14.Clear();
                 vacc_name_contact_15.Clear();
-                date_firtsvacc_contact_16.Clear();
-                date_secondvacc_contact_17.Clear();
+                date_firtsvacc_contact_16.SelectedDate = null;
+                date_secondvacc_contact_17.SelectedDate = null;
                 revacc_contact_18.Clear();
                 date_before_19.SelectedDate = null;
 
