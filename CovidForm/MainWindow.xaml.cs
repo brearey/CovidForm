@@ -35,13 +35,12 @@ namespace CovidForm
         {
             if (false)
             {
-                MessageBox.Show("Заполните все поля", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Заполните все обязательные * поля", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
             else
             {
                 var application = new Excel.Application(); //Объявляем переменную с приложением Excel
                 Excel.Workbook workbook = application.Workbooks.Open(System.IO.Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName) + "/oprosnik.xlsx");
-                //Excel.Workbook workbook = application.Workbooks.Open("C:/Users/brear/source/repos/CovidForm/CovidForm/oprosnik.xlsx");
                 
 
                 Excel.Worksheet worksheet = (Excel.Worksheet)workbook.Worksheets.get_Item(1);
@@ -163,7 +162,7 @@ namespace CovidForm
             }
         }
 
-        private bool isNotEmpty()
+        private bool isEmpty()
         {
             if (String.IsNullOrWhiteSpace(info_date_01.Text) ||
                 String.IsNullOrWhiteSpace(number_and_date_02.Text) ||

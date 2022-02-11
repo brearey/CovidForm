@@ -41,59 +41,72 @@ namespace CovidForm
 
         private void Button_Add_Contact(object sender, RoutedEventArgs e)
         {
-            items.Add(new ContactFace()
+            // Проверка чтобы хотя бы одно поле было заполнено
+            if (isEmpty())
             {
-                Id = items.Count + 1,
-                Name_contact_01 = name_contact_01.Text,
-                Floor_contact_02 = floor_contact_02.Text,
-                Date_birth_contact_03 = date_birth_contact_03.Text,
-                Address_contact_04 = address_contact_04.Text,
-                Place_work_contact_05 = place_work_contact_05.Text,
-                Contact_number_06 = contact_number_06.Text,
-                Date_sick_07 = date_sick_07.Text,
-                Date_end_isolation_08 = date_end_isolation_08.Text,
-                Name_sick_contact_09 = name_sick_contact_09.Text,
-                Num_decree_10 = num_decree_10.Text,
-                Date_decree_11 = date_decree_11.Text,
-                Sick_contact_12 = sick_contact_12.Text,
-                Self_observatory_13 = self_observatory_13.Text,
-                Med_organi_contact_14 = med_organi_contact_14.Text,
-                Vacc_name_contact_15 = vacc_name_contact_15.Text,
-                Date_firtsvacc_contact_16 = date_firtsvacc_contact_16.Text,
-                Date_secondvacc_contact_17 = date_secondvacc_contact_17.Text,
-                Revacc_contact_18 = revacc_contact_18.Text,
-                Date_before_19 = date_before_19.Text,
-            });
+                items.Add(new ContactFace()
+                {
+                    Id = items.Count + 1,
+                    Name_contact_01 = name_contact_01.Text,
+                    Floor_contact_02 = floor_contact_02.Text,
+                    Date_birth_contact_03 = date_birth_contact_03.Text,
+                    Address_contact_04 = address_contact_04.Text,
+                    Place_work_contact_05 = place_work_contact_05.Text,
+                    Contact_number_06 = contact_number_06.Text,
+                    Date_sick_07 = date_sick_07.Text,
+                    Date_end_isolation_08 = date_end_isolation_08.Text,
+                    Name_sick_contact_09 = name_sick_contact_09.Text,
+                    Num_decree_10 = num_decree_10.Text,
+                    Date_decree_11 = date_decree_11.Text,
+                    Sick_contact_12 = sick_contact_12.Text,
+                    Self_observatory_13 = self_observatory_13.Text,
+                    Med_organi_contact_14 = med_organi_contact_14.Text,
+                    Vacc_name_contact_15 = vacc_name_contact_15.Text,
+                    Date_firtsvacc_contact_16 = date_firtsvacc_contact_16.Text,
+                    Date_secondvacc_contact_17 = date_secondvacc_contact_17.Text,
+                    Revacc_contact_18 = revacc_contact_18.Text,
+                    Date_before_19 = date_before_19.Text,
+                });
 
-            lvUsers.Items.Refresh();
+                lvUsers.Items.Refresh();
 
-            name_contact_01.Clear();
-            floor_contact_02.Clear();
-            date_birth_contact_03.Clear();
-            address_contact_04.Clear();
-            place_work_contact_05.Clear();
-            contact_number_06.Clear();
-            date_sick_07.Clear();
-            date_end_isolation_08.Clear();
-            name_sick_contact_09.Clear();
-            num_decree_10.Clear();
-            date_decree_11.Clear();
-            sick_contact_12.Clear();
-            self_observatory_13.Clear();
-            med_organi_contact_14.Clear();
-            vacc_name_contact_15.Clear();
-            date_firtsvacc_contact_16.Clear();
-            date_secondvacc_contact_17.Clear();
-            revacc_contact_18.Clear();
-            date_before_19.SelectedDate = null;
+                name_contact_01.Clear();
+                floor_contact_02.Clear();
+                date_birth_contact_03.Clear();
+                address_contact_04.Clear();
+                place_work_contact_05.Clear();
+                contact_number_06.Clear();
+                date_sick_07.Clear();
+                date_end_isolation_08.Clear();
+                name_sick_contact_09.Clear();
+                num_decree_10.Clear();
+                date_decree_11.Clear();
+                sick_contact_12.Clear();
+                self_observatory_13.Clear();
+                med_organi_contact_14.Clear();
+                vacc_name_contact_15.Clear();
+                date_firtsvacc_contact_16.Clear();
+                date_secondvacc_contact_17.Clear();
+                revacc_contact_18.Clear();
+                date_before_19.SelectedDate = null;
+
+                if (items.Count > 4)
+                {
+                    buttonAddContact.IsEnabled = false;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Заполните все обязательные * поля", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
         }
 
         private void Button_Export_Excel(object sender, RoutedEventArgs e)
         {
             var application = new Excel.Application(); //Объявляем переменную с приложением Excel
             Excel.Workbook workbook = application.Workbooks.Open(fileName);
-            //Excel.Workbook workbook = application.Workbooks.Open("C:/Users/admin/source/repos/CovidForm/123/CovidForm/oprosnik.xlsx");
 
+            Excel.Worksheet worksheet = (Excel.Worksheet)workbook.Worksheets.get_Item(1);
             Excel.Worksheet worksheet_2 = (Excel.Worksheet)workbook.Worksheets.get_Item(3);
 
             var i = 3;
@@ -122,6 +135,18 @@ namespace CovidForm
                 i++;
             }
 
+            // Запись главного опрашиваемого в первую строку контактных для ориентировки
+            worksheet_2.Cells[2][2] = worksheet.Cells[2][5];
+            worksheet_2.Cells[3][2] = worksheet.Cells[2][12];
+            worksheet_2.Cells[4][2] = worksheet.Cells[2][6];
+            worksheet_2.Cells[5][2] = worksheet.Cells[2][9];
+            worksheet_2.Cells[6][2] = worksheet.Cells[2][13];
+            worksheet_2.Cells[7][2] = worksheet.Cells[2][10];
+            worksheet_2.Cells[16][2] = worksheet.Cells[2][73];
+            worksheet_2.Cells[17][2] = worksheet.Cells[2][74];
+            worksheet_2.Cells[18][2] = worksheet.Cells[2][76];
+            worksheet_2.Cells[19][2] = worksheet.Cells[2][80];
+
             try
             {
                 workbook.Save();
@@ -140,7 +165,7 @@ namespace CovidForm
             }
         }
 
-        private bool isNotEmpty()
+        private bool isEmpty()
         {
             if (String.IsNullOrWhiteSpace(name_contact_01.Text) ||
                 String.IsNullOrWhiteSpace(floor_contact_02.Text) ||
@@ -155,7 +180,7 @@ namespace CovidForm
                 String.IsNullOrWhiteSpace(date_decree_11.Text) ||
                 String.IsNullOrWhiteSpace(sick_contact_12.Text) ||
                 String.IsNullOrWhiteSpace(self_observatory_13.Text) ||
-                String.IsNullOrWhiteSpace(med_organi_contact_14.Text) ||
+                //String.IsNullOrWhiteSpace(med_organi_contact_14.Text) || // Не обязательное поле
                 String.IsNullOrWhiteSpace(vacc_name_contact_15.Text) ||
                 String.IsNullOrWhiteSpace(date_firtsvacc_contact_16.Text) ||
                 String.IsNullOrWhiteSpace(date_secondvacc_contact_17.Text) ||

@@ -88,34 +88,34 @@
                             <RowDefinition></RowDefinition>
                             <RowDefinition></RowDefinition>
                             <RowDefinition></RowDefinition>
-                            <RowDefinition Height="*"></RowDefinition>
                             <RowDefinition></RowDefinition>
                             <RowDefinition></RowDefinition>
-                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition></ColumnDefinition>
                             <ColumnDefinition></ColumnDefinition>
                         </Grid.ColumnDefinitions>
-                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="0" VerticalAlignment="Center">Ф.И.О</Label>
-                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center">Пол</Label>
-                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="2" VerticalAlignment="Center">Дата рождения</Label>
-                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="3" VerticalAlignment="Center">Фактический адрес проживания</Label>
-                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="4" VerticalAlignment="Center">Место работы/учебы</Label>
-                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="5" VerticalAlignment="Center">Контактный телефон</Label>
-                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="6" VerticalAlignment="Center">Дата контакта с больным</Label>
-                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="7" VerticalAlignment="Center">Дата окончания изоляции</Label>
-                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="8" VerticalAlignment="Center">ФИО больного с которым был контакт</Label>
-                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="9" VerticalAlignment="Center">Номер постановления</Label>
-                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="10" VerticalAlignment="Center">Дата постановления</Label>
-                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="11" VerticalAlignment="Center">Больной / контактный</Label>
-                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="12" VerticalAlignment="Center">Самоизоляция / обсерватор</Label>
-                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="13" VerticalAlignment="Center">Медицинская организация по месту жительства (территориально)</Label>
-                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="14" VerticalAlignment="Center">Вакцинация: название вакцины</Label>
-                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="15" VerticalAlignment="Center">Дата 1 вакцинации</Label>
-                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="16" VerticalAlignment="Center">Дата 2 вакцинации</Label>
-                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="17" VerticalAlignment="Center">Ревакцинация: дата, название вакцины</Label>
-                        <Label HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="18" VerticalAlignment="Center">Болел ранее, дата</Label>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="0" VerticalAlignment="Center">Ф.И.О *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center">Пол *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="2" VerticalAlignment="Center">Дата рождения *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="3" VerticalAlignment="Center">Фактический адрес проживания *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="4" VerticalAlignment="Center">Место работы/учебы *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="5" VerticalAlignment="Center">Контактный телефон *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="6" VerticalAlignment="Center">Дата контакта с больным *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="7" VerticalAlignment="Center">Дата окончания изоляции *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="8" VerticalAlignment="Center">ФИО больного с которым был контакт *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="9" VerticalAlignment="Center">Номер постановления *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="10" VerticalAlignment="Center">Дата постановления *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="11" VerticalAlignment="Center">Больной / контактный *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="12" VerticalAlignment="Center">Самоизоляция / обсерватор *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="13" VerticalAlignment="Center">Медицинская организация по месту жительства (территориально) *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="14" VerticalAlignment="Center">Вакцинация: название вакцины *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="15" VerticalAlignment="Center">Дата 1 вакцинации *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="16" VerticalAlignment="Center">Дата 2 вакцинации *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="17" VerticalAlignment="Center">Ревакцинация: дата, название вакцины *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="18" VerticalAlignment="Center">Болел ранее, дата *</TextBlock>
 
                         <TextBox
                         MinWidth="800"
@@ -261,7 +261,7 @@
                     </Grid>
 
                     <Grid>
-                        <Button HorizontalAlignment="Center" Content="Добавить контактного" Click="Button_Add_Contact"/>
+                        <Button x:Name="buttonAddContact" HorizontalAlignment="Center" Content="Добавить контактного" Click="Button_Add_Contact"/>
                         <Button HorizontalAlignment="Right" Content="Экспорт в Excel" Click="Button_Export_Excel"/>
                     </Grid>
 
