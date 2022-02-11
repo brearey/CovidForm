@@ -42,7 +42,7 @@ namespace CovidForm
         private void Button_Add_Contact(object sender, RoutedEventArgs e)
         {
             // Проверка чтобы хотя бы одно поле было заполнено
-            if (isEmpty())
+            if (!isEmpty())
             {
                 items.Add(new ContactFace()
                 {
@@ -179,13 +179,13 @@ namespace CovidForm
                 String.IsNullOrWhiteSpace(num_decree_10.Text) ||
                 String.IsNullOrWhiteSpace(date_decree_11.Text) ||
                 String.IsNullOrWhiteSpace(sick_contact_12.Text) ||
-                String.IsNullOrWhiteSpace(self_observatory_13.Text) ||
+                String.IsNullOrWhiteSpace(self_observatory_13.Text)
                 //String.IsNullOrWhiteSpace(med_organi_contact_14.Text) || // Не обязательное поле
-                String.IsNullOrWhiteSpace(vacc_name_contact_15.Text) ||
-                String.IsNullOrWhiteSpace(date_firtsvacc_contact_16.Text) ||
-                String.IsNullOrWhiteSpace(date_secondvacc_contact_17.Text) ||
-                String.IsNullOrWhiteSpace(revacc_contact_18.Text) ||
-                String.IsNullOrWhiteSpace(date_before_19.Text)
+                //String.IsNullOrWhiteSpace(vacc_name_contact_15.Text) || // Не обязательное поле
+                //String.IsNullOrWhiteSpace(date_firtsvacc_contact_16.Text) || // Не обязательное поле
+                //String.IsNullOrWhiteSpace(date_secondvacc_contact_17.Text) || // Не обязательное поле
+                //String.IsNullOrWhiteSpace(revacc_contact_18.Text) || // Не обязательное поле
+                //String.IsNullOrWhiteSpace(date_before_19.Text) // Не обязательное поле
                 )
             {
                 return true;

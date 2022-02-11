@@ -110,12 +110,12 @@
                         <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="10" VerticalAlignment="Center">Дата постановления *</TextBlock>
                         <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="11" VerticalAlignment="Center">Больной / контактный *</TextBlock>
                         <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="12" VerticalAlignment="Center">Самоизоляция / обсерватор *</TextBlock>
-                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="13" VerticalAlignment="Center">Медицинская организация по месту жительства (территориально) *</TextBlock>
-                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="14" VerticalAlignment="Center">Вакцинация: название вакцины *</TextBlock>
-                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="15" VerticalAlignment="Center">Дата 1 вакцинации *</TextBlock>
-                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="16" VerticalAlignment="Center">Дата 2 вакцинации *</TextBlock>
-                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="17" VerticalAlignment="Center">Ревакцинация: дата, название вакцины *</TextBlock>
-                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="18" VerticalAlignment="Center">Болел ранее, дата *</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="13" VerticalAlignment="Center">Медицинская организация по месту жительства (территориально)</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="14" VerticalAlignment="Center">Вакцинация: название вакцины</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="15" VerticalAlignment="Center">Дата 1 вакцинации</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="16" VerticalAlignment="Center">Дата 2 вакцинации</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="17" VerticalAlignment="Center">Ревакцинация: дата, название вакцины</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="18" VerticalAlignment="Center">Болел ранее, дата</TextBlock>
 
                         <TextBox
                         MinWidth="800"
@@ -274,7 +274,14 @@
                         <Button HorizontalAlignment="Right" Content="Экспорт в Excel" Click="Button_Export_Excel"/>
                     </Grid>
 
-
+                    <Grid>
+                        <TextBlock
+                        Text="* - обязательные поля"
+                        FontStyle="Italic"
+                        FontSize="14"
+                        HorizontalAlignment="Center"
+                        Margin="0 20 0 0"/>
+                    </Grid>
                 </StackPanel>
             </ScrollViewer>
         </Border>
