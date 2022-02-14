@@ -42,11 +42,27 @@ namespace CovidForm
         private void Button_Add_Contact(object sender, RoutedEventArgs e)
         {
             // Проверка чтобы хотя бы одно поле было заполнено
-            if (!isEmpty())
+            if (isEmpty())
             {
+                // Разница дат
+                DateTime date_firtsvacc_contact_16_6month = date_firtsvacc_contact_16.SelectedDate ?? new DateTime(2020, 01, 01);
+                DateTime date_secondvacc_contact_17_6month = date_secondvacc_contact_17.SelectedDate ?? new DateTime(2020, 01, 01);
+                DateTime date_before_19_6month = date_before_19.SelectedDate ?? new DateTime(2020, 01, 01);
+                
+                //Вакцинация или переболел не позднее чем 6 месяцев назад
+                if (DateTime.Compare(getAfterDate(date_firtsvacc_contact_16_6month, date_secondvacc_contact_17_6month, date_before_19_6month).AddMonths(6), DateTime.Today) > 0)
+                {
+                    MessageBox.Show("Да", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
+                }
+                else
+                {
+                    MessageBox.Show("Нет", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
+                }
+
                 items.Add(new ContactFace()
                 {
                     Id = items.Count + 1,
+                    Notification = "да",
                     Name_contact_01 = name_contact_01.Text,
                     Floor_contact_02 = floor_contact_02.Text,
                     Date_birth_contact_03 = date_birth_contact_03.Text,
@@ -195,11 +211,38 @@ namespace CovidForm
                 return false;
             }
         }
+
+        private DateTime getAfterDate(DateTime t1, DateTime t2, DateTime t3)
+        {
+            DateTime result;
+            if (DateTime.Compare(t1, t2) > 0)
+            {
+                if (DateTime.Compare(t1, t3) > 0)
+                {
+                    result = t1;
+                }
+                else
+                {
+                    result = t3;
+
+                }
+            }
+            else if (DateTime.Compare(t2, t3) > 0)
+            {
+                result = t2;
+            }
+            else
+            {
+                result = t3;
+            }
+            return result;
+        }
     } //end class
 
     public class ContactFace
     {
         public int Id { get; set; }
+        public string Notification { get; set; }
         public string Name_contact_01 { get; set; }
         public string Floor_contact_02 { get; set; }
         public string Date_birth_contact_03 { get; set; }

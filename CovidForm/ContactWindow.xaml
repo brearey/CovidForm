@@ -43,6 +43,7 @@
                         <ListView.View>
                             <GridView>
                                 <GridViewColumn Header="№" DisplayMemberBinding="{Binding Id}" />
+                                <GridViewColumn Header="Уведомление" DisplayMemberBinding="{Binding Notification}" />
                                 <GridViewColumn Header="ФИО" DisplayMemberBinding="{Binding Name_contact_01}" />
                                 <GridViewColumn Header="пол" DisplayMemberBinding="{Binding Floor_contact_02}" />
                                 <GridViewColumn Header="Дата рождения" DisplayMemberBinding="{Binding Date_birth_contact_03}" />
