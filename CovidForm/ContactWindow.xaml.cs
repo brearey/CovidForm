@@ -42,27 +42,31 @@ namespace CovidForm
         private void Button_Add_Contact(object sender, RoutedEventArgs e)
         {
             // Проверка чтобы хотя бы одно поле было заполнено
-            if (isEmpty())
+            if (!isEmpty())
             {
                 // Разница дат
                 DateTime date_firtsvacc_contact_16_6month = date_firtsvacc_contact_16.SelectedDate ?? new DateTime(2020, 01, 01);
                 DateTime date_secondvacc_contact_17_6month = date_secondvacc_contact_17.SelectedDate ?? new DateTime(2020, 01, 01);
                 DateTime date_before_19_6month = date_before_19.SelectedDate ?? new DateTime(2020, 01, 01);
-                
+                DateTime revacc_contact_18_6month = revacc_contact_18.SelectedDate ?? new DateTime(2020, 01, 01);
+
                 //Вакцинация или переболел не позднее чем 6 месяцев назад
-                if (DateTime.Compare(getAfterDate(date_firtsvacc_contact_16_6month, date_secondvacc_contact_17_6month, date_before_19_6month).AddMonths(6), DateTime.Today) > 0)
+                string notif;
+                if (DateTime.Compare(getAfterDate(date_firtsvacc_contact_16_6month, date_secondvacc_contact_17_6month, date_before_19_6month, revacc_contact_18_6month).AddMonths(6), DateTime.Today) < 0)
                 {
-                    MessageBox.Show("Да", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    //получает уведомление
+                    notif = "да";
                 }
                 else
                 {
-                    MessageBox.Show("Нет", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    //не получает уведомление
+                    notif = "нет";
                 }
 
                 items.Add(new ContactFace()
                 {
                     Id = items.Count + 1,
-                    Notification = "да",
+                    Notification = notif,
                     Name_contact_01 = name_contact_01.Text,
                     Floor_contact_02 = floor_contact_02.Text,
                     Date_birth_contact_03 = date_birth_contact_03.Text,
@@ -103,7 +107,7 @@ namespace CovidForm
                 vacc_name_contact_15.Clear();
                 date_firtsvacc_contact_16.SelectedDate = null;
                 date_secondvacc_contact_17.SelectedDate = null;
-                revacc_contact_18.Clear();
+                revacc_contact_18.SelectedDate = null;
                 date_before_19.SelectedDate = null;
 
                 if (items.Count > 4)
@@ -124,8 +128,10 @@ namespace CovidForm
 
             Excel.Worksheet worksheet = (Excel.Worksheet)workbook.Worksheets.get_Item(1);
             Excel.Worksheet worksheet_2 = (Excel.Worksheet)workbook.Worksheets.get_Item(3);
+            Excel.Worksheet worksheet_3 = (Excel.Worksheet)workbook.Worksheets.get_Item(4);
 
             var i = 3;
+            var notif_index = 15;
             foreach (var item in items)
             {
                 worksheet_2.Cells[2][i] = item.Name_contact_01;
@@ -147,6 +153,18 @@ namespace CovidForm
                 worksheet_2.Cells[18][i] = item.Date_secondvacc_contact_17;
                 worksheet_2.Cells[19][i] = item.Revacc_contact_18;
                 worksheet_2.Cells[20][i] = item.Date_before_19;
+
+                //Запись в лист №3 Уведомления тех кто получает уведомление
+                if (item.Notification == "да")
+                {
+                    worksheet_3.Cells[1][notif_index] = item.Name_contact_01;
+                    worksheet_3.Cells[3][notif_index] = item.Date_birth_contact_03;
+                    worksheet_3.Cells[4][notif_index] = item.Address_contact_04;
+                    worksheet_3.Cells[6][notif_index] = item.Place_work_contact_05;
+                    worksheet_3.Cells[7][notif_index] = item.Contact_number_06;
+                    worksheet_3.Cells[9][notif_index] = item.Date_end_isolation_08;
+                    notif_index++;
+                }
 
                 i++;
             }
@@ -212,9 +230,11 @@ namespace CovidForm
             }
         }
 
-        private DateTime getAfterDate(DateTime t1, DateTime t2, DateTime t3)
+        private DateTime getAfterDate(DateTime t1, DateTime t2, DateTime t3, DateTime t4)
         {
-            DateTime result;
+            DateTime result = new DateTime(2000, 01, 01);
+            // Способ условиями
+            /*
             if (DateTime.Compare(t1, t2) > 0)
             {
                 if (DateTime.Compare(t1, t3) > 0)
@@ -234,6 +254,16 @@ namespace CovidForm
             else
             {
                 result = t3;
+            }
+            */
+
+            // способ массивом
+            DateTime[] array = new DateTime[] { t1, t2, t3, t4 };
+            foreach (var item in array)
+            {
+                if (DateTime.Compare(item, result) > 0) {
+                    result = item;
+                }
             }
             return result;
         }

@@ -33,7 +33,7 @@ namespace CovidForm
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (false)
+            if (!isEmpty())
             {
                 MessageBox.Show("Заполните все обязательные * поля", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
             }

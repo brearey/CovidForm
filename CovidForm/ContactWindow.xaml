@@ -115,7 +115,7 @@
                         <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="14" VerticalAlignment="Center">Вакцинация: название вакцины</TextBlock>
                         <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="15" VerticalAlignment="Center">Дата 1 вакцинации</TextBlock>
                         <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="16" VerticalAlignment="Center">Дата 2 вакцинации</TextBlock>
-                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="17" VerticalAlignment="Center">Ревакцинация: дата, название вакцины</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="17" VerticalAlignment="Center">Ревакцинация, дата</TextBlock>
                         <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" Margin="0 20 10 0" Grid.Column="0" Grid.Row="18" VerticalAlignment="Center">Болел ранее, дата</TextBlock>
 
                         <TextBox
@@ -251,16 +251,18 @@
                         Style="{StaticResource MaterialDesignDatePicker}"
                         Language="ru"/>
 
-                        <TextBox
+                        <DatePicker
                         x:Name="revacc_contact_18"
                         Grid.Row="17"
                         Grid.Column="1"
                         VerticalAlignment="Bottom"
-                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                        Style="{StaticResource MaterialDesignDatePicker}"
+                        Language="ru"
+                        SelectedDate="{Binding StartDate}" />
 
                         <DatePicker
                         x:Name="date_before_19"
-                        Grid.Row="19"
+                        Grid.Row="18"
                         Grid.Column="1"
                         VerticalAlignment="Bottom"
                         Style="{StaticResource MaterialDesignDatePicker}"
