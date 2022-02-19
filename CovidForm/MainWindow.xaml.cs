@@ -33,7 +33,7 @@ namespace CovidForm
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (!isEmpty())
+            if (false)
             {
                 MessageBox.Show("Заполните все обязательные * поля", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
@@ -73,72 +73,73 @@ namespace CovidForm
                 worksheet.Cells[2][27] = outside_country_25.Text;
                 worksheet.Cells[2][28] = date_return_26.Text;
                 worksheet.Cells[2][29] = city_district_27.Text;
-                worksheet.Cells[2][32] = risk_28.Text;
-                worksheet.Cells[2][33] = mask_29.Text;
-                worksheet.Cells[2][34] = hands_30.Text;
-                worksheet.Cells[2][35] = antiseptic_31.Text;
-                worksheet.Cells[2][36] = gloves_32.Text;
-                worksheet.Cells[2][38] = distance_33.Text;
-                worksheet.Cells[2][39] = bus_34.Text;
-                worksheet.Cells[2][40] = torg_35.Text;
-                worksheet.Cells[2][41] = pitanie_36.Text;
-                worksheet.Cells[2][42] = krasota_37.Text;
-                worksheet.Cells[2][43] = med_38.Text;
-                worksheet.Cells[2][44] = mass_naseleniya_39.Text;
-                worksheet.Cells[2][45] = inpatient_care_40.Text;
-                worksheet.Cells[2][46] = dormitory_41.Text;
-                worksheet.Cells[2][47] = relatives_42.Text;
-                worksheet.Cells[2][49] = private_43.Text;
-                worksheet.Cells[2][50] = cause_44.Text;
-                worksheet.Cells[2][51] = date_selection_45.Text;
-                worksheet.Cells[2][52] = date_result_46.Text;
-                worksheet.Cells[2][53] = date_confirmation_47.Text;
-                worksheet.Cells[2][54] = organization_48.Text;
-                worksheet.Cells[2][56] = other_infections_49.Text;
-                worksheet.Cells[2][57] = symptoms_50.Text;
-                worksheet.Cells[2][58] = temperature_51.Text;
-                worksheet.Cells[2][59] = other_symptoms_52.Text;
-                worksheet.Cells[2][60] = date_disease_53.Text;
-                worksheet.Cells[2][61] = date_appeal_54.Text;
-                worksheet.Cells[2][62] = place_appeal_55.Text;
-                worksheet.Cells[2][63] = pleliminary_diagnosis_56.Text;
-                worksheet.Cells[2][64] = place_estab_57.Text;
-                worksheet.Cells[2][65] = hospitalzation_58.Text;
-                worksheet.Cells[2][66] = date_hospitalzation_59.Text;
-                worksheet.Cells[2][67] = place_hospitalzation_60.Text;
-                worksheet.Cells[2][68] = diagnosis_61.Text;
-                worksheet.Cells[2][69] = severity_62.Text;
-                worksheet.Cells[2][70] = pathology_63.Text;
-                worksheet.Cells[2][71] = pregnancy_64.Text;
-                worksheet.Cells[2][72] = vaccinated_65.Text;
-                worksheet.Cells[2][73] = name_vaccine_66.Text;
-                worksheet.Cells[2][74] = date_onevacc_67.Text;
-                worksheet.Cells[2][75] = day_illnessone_68.Text;
-                worksheet.Cells[2][76] = date_twovacc_69.Text;
-                worksheet.Cells[2][77] = day_illnesstwo_70.Text;
-                worksheet.Cells[2][78] = flu_vaccinated_71.Text;
-                worksheet.Cells[2][79] = revaccinated_72.Text;
-                worksheet.Cells[2][80] = date_revacc_73.Text;
-                worksheet.Cells[2][81] = final_diagnosis_74.Text;
-                worksheet.Cells[2][82] = outcome_75.Text;
-                worksheet.Cells[2][84] = date_recovery_76.Text;
-                worksheet.Cells[2][85] = contact_77.Text;
-                worksheet.Cells[2][86] = contact_category_78.Text;
-                worksheet.Cells[2][87] = total_contact_79.Text;
-                worksheet.Cells[2][88] = persons_covid_80.Text;
-                worksheet.Cells[2][89] = household_81.Text;
-                worksheet.Cells[2][90] = place_work_82.Text;
-                worksheet.Cells[2][91] = place_education_83.Text;
-                worksheet.Cells[2][92] = social_contact_84.Text;
-                worksheet.Cells[2][93] = transport_contact_85.Text;
-                worksheet.Cells[2][94] = other_organi_86.Text;
-                worksheet.Cells[2][95] = medical_organi_87.Text;
-                worksheet.Cells[2][96] = supervision_medical_88.Text;
-                worksheet.Cells[2][97] = date_quarantine_89.Text;
-                worksheet.Cells[2][98] = events_contact_90.Text;
-                worksheet.Cells[2][99] = result_contact_91.Text;
-                worksheet.Cells[2][100] = house_92.Text;
-                worksheet.Cells[2][101] = entrance_93.Text;
+                worksheet.Cells[2][31] = risk_28.Text;
+                worksheet.Cells[2][32] = mask_29.Text;
+                worksheet.Cells[2][33] = hands_30.Text;
+                worksheet.Cells[2][34] = antiseptic_31.Text;
+                worksheet.Cells[2][35] = gloves_32.Text;
+                worksheet.Cells[2][36] = distance_33.Text;
+                worksheet.Cells[2][38] = bus_34.Text;
+                worksheet.Cells[2][39] = torg_35.Text;
+                worksheet.Cells[2][40] = pitanie_36.Text;
+                worksheet.Cells[2][41] = krasota_37.Text;
+                worksheet.Cells[2][42] = med_38.Text;
+                worksheet.Cells[2][43] = mass_naseleniya_39.Text;
+                worksheet.Cells[2][44] = inpatient_care_40.Text; // Стационарное лечение
+                worksheet.Cells[2][45] = dormitory_41.Text;
+                worksheet.Cells[2][46] = relatives_42.Text;
+                worksheet.Cells[2][47] = private_43.Text;
+                worksheet.Cells[2][49] = cause_44.Text;
+                worksheet.Cells[2][50] = date_selection_45.Text;
+                worksheet.Cells[2][51] = date_result_46.Text;
+                worksheet.Cells[2][52] = date_confirmation_47.Text;
+                worksheet.Cells[2][53] = organization_48.Text;
+                worksheet.Cells[2][54] = other_infections_49.Text;
+                worksheet.Cells[2][56] = symptoms_50.Text;
+                worksheet.Cells[2][57] = temperature_51.Text;
+                worksheet.Cells[2][58] = other_symptoms_52.Text;
+                worksheet.Cells[2][59] = date_disease_53.Text;
+                worksheet.Cells[2][60] = date_appeal_54.Text;
+                worksheet.Cells[2][61] = place_appeal_55.Text;
+                worksheet.Cells[2][62] = pleliminary_diagnosis_56.Text;
+                worksheet.Cells[2][63] = place_estab_57.Text;
+                worksheet.Cells[2][64] = hospitalzation_58.Text;
+                worksheet.Cells[2][65] = date_hospitalzation_59.Text;
+                worksheet.Cells[2][66] = place_hospitalzation_60.Text;
+                worksheet.Cells[2][67] = diagnosis_61.Text;
+                worksheet.Cells[2][68] = severity_62.Text;
+                worksheet.Cells[2][69] = pathology_63.Text;
+                worksheet.Cells[2][70] = pregnancy_64.Text;
+                worksheet.Cells[2][71] = vaccinated_65.Text;
+                worksheet.Cells[2][72] = name_vaccine_66.Text;
+                worksheet.Cells[2][73] = date_onevacc_67.Text;
+                worksheet.Cells[2][74] = day_illnessone_68.Text;
+                worksheet.Cells[2][75] = date_twovacc_69.Text;
+                worksheet.Cells[2][76] = day_illnesstwo_70.Text;
+                worksheet.Cells[2][77] = flu_vaccinated_71.Text;
+                worksheet.Cells[2][78] = revaccinated_72.Text;
+                worksheet.Cells[2][79] = date_revacc_73.Text;
+                worksheet.Cells[2][80] = final_diagnosis_74.Text;
+                worksheet.Cells[2][81] = outcome_75.Text;
+                worksheet.Cells[2][82] = date_recovery_76.Text;
+                worksheet.Cells[2][84] = contact_77.Text;
+                worksheet.Cells[2][85] = contact_category_78.Text;
+                worksheet.Cells[2][86] = total_contact_79.Text;
+                worksheet.Cells[2][87] = persons_covid_80.Text;
+                worksheet.Cells[2][88] = household_81.Text;
+                worksheet.Cells[2][89] = place_work_82.Text;
+                worksheet.Cells[2][90] = place_education_83.Text;
+                worksheet.Cells[2][91] = social_contact_84.Text;
+                worksheet.Cells[2][92] = transport_contact_85.Text;
+                worksheet.Cells[2][93] = other_organi_86.Text;
+                worksheet.Cells[2][94] = medical_organi_87.Text;
+                worksheet.Cells[2][95] = supervision_medical_88.Text;
+                worksheet.Cells[2][96] = date_quarantine_89.Text;
+                worksheet.Cells[2][97] = events_contact_90.Text;
+                worksheet.Cells[2][98] = result_contact_91.Text;
+                worksheet.Cells[2][99] = house_92.Text;
+                worksheet.Cells[2][100] = entrance_93.Text;
+                worksheet.Cells[2][101] = floor_94.Text;
                 worksheet.Cells[2][102] = apartments_95.Text;
                 try
                 {
@@ -266,6 +267,6 @@ namespace CovidForm
             {
                 return false;
             }
-        }
+        }       
     }
 }

@@ -42,7 +42,7 @@ namespace CovidForm
         private void Button_Add_Contact(object sender, RoutedEventArgs e)
         {
             // Проверка чтобы хотя бы одно поле было заполнено
-            if (!isEmpty())
+            if (isEmpty())
             {
                 // Разница дат
                 DateTime date_firtsvacc_contact_16_6month = date_firtsvacc_contact_16.SelectedDate ?? new DateTime(2020, 01, 01);
@@ -103,14 +103,14 @@ namespace CovidForm
                 date_decree_11.SelectedDate = null;
                 sick_contact_12.SelectedItem = null;
                 self_observatory_13.SelectedItem = null;
-                med_organi_contact_14.Clear();
+                med_organi_contact_14.SelectedItem = null;
                 vacc_name_contact_15.Clear();
                 date_firtsvacc_contact_16.SelectedDate = null;
                 date_secondvacc_contact_17.SelectedDate = null;
                 revacc_contact_18.SelectedDate = null;
                 date_before_19.SelectedDate = null;
 
-                if (items.Count > 4)
+                if (items.Count > 7)
                 {
                     buttonAddContact.IsEnabled = false;
                 }
@@ -168,6 +168,8 @@ namespace CovidForm
 
                 i++;
             }
+            //Запись текущей даты
+            worksheet_3.Cells[1][8] = DateTime.Now.ToString("dd.MM.yyyy");
 
             // Запись главного опрашиваемого в первую строку контактных для ориентировки
             worksheet_2.Cells[2][2] = worksheet.Cells[2][5];

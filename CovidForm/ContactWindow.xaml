@@ -221,12 +221,28 @@
                             <TextBlock>Госпитализирован</TextBlock>
                         </ComboBox>
 
-                        <TextBox
+                        <ComboBox
                         x:Name="med_organi_contact_14"
                         Grid.Row="13"
                         Grid.Column="1"
-                        VerticalAlignment="Bottom"
-                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                        VerticalAlignment="Bottom">
+                            <TextBlock>Центр СПИД</TextBlock>
+                            <TextBlock>ЯНЦ КМП</TextBlock>
+                            <TextBlock>ГАУ РС(Я) МЦ г. Якутска</TextBlock>
+                            <TextBlock>ГАУ РС(Я) РКБ №3</TextBlock>
+                            <TextBlock>ГАУ РС(Я) ЯРКБ</TextBlock>
+                            <TextBlock>ГАУ РС(Я) ЯРОД</TextBlock>
+                            <TextBlock>ГАУ РС(Я) ЯГБ №3</TextBlock>
+                            <TextBlock>ГАУ РС(Я) ЯГБ №2</TextBlock>
+                            <TextBlock>ГАУ РС(Я) Поликлиника №1</TextBlock>
+                            <TextBlock>ГАУ РС(Я) РБ№1-НЦМ</TextBlock>
+                            <TextBlock>ГАУ РС(Я) РБ№2-ЦЭМП</TextBlock>
+                            <TextBlock>ССМП</TextBlock>
+                            <TextBlock>Клиника СВФУ</TextBlock>
+                            <TextBlock>ДВОМЦ</TextBlock>
+                            <TextBlock>Аврора</TextBlock>
+                            <TextBlock>Благомед</TextBlock>
+                        </ComboBox>
 
                         <TextBox
                         x:Name="vacc_name_contact_15"
