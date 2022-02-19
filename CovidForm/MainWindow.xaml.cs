@@ -33,6 +33,7 @@ namespace CovidForm
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            //проверка на пустоту исполнителя и всех обязательных полей
             if (false)
             {
                 MessageBox.Show("Заполните все обязательные * поля", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
@@ -141,6 +142,8 @@ namespace CovidForm
                 worksheet.Cells[2][100] = entrance_93.Text;
                 worksheet.Cells[2][101] = floor_94.Text;
                 worksheet.Cells[2][102] = apartments_95.Text;
+                // исполнитель
+                worksheet.Cells[2][103] = ispolnitel.Text;
                 try
                 {
                     string folder = System.IO.Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName);
@@ -258,7 +261,9 @@ namespace CovidForm
                 String.IsNullOrWhiteSpace(house_92.Text) ||
                 String.IsNullOrWhiteSpace(entrance_93.Text) ||
                 String.IsNullOrWhiteSpace(floor_94.Text) ||
-                String.IsNullOrWhiteSpace(apartments_95.Text)
+                String.IsNullOrWhiteSpace(apartments_95.Text) ||
+                //исполнитель
+                String.IsNullOrWhiteSpace(ispolnitel.Text)
                 )
             {
                 return true;

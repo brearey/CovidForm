@@ -30,6 +30,13 @@
                         <LineBreak/>
                         <Run>у лиц с подозрением на новую коронавирусную инфекцию</Run>
                     </TextBlock>
+                    <TextBox
+                        x:Name="ispolnitel"
+                        materialDesign:HintAssist.Hint="исполнитель *"
+                        MinWidth="300"
+                        HorizontalAlignment="Left"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}">
+                    </TextBox>
 
                     <Grid Margin="20 20 20 40" ShowGridLines="False">
                         <Grid.RowDefinitions>
