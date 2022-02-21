@@ -29,6 +29,8 @@ namespace CovidForm
         public MainWindow()
         {
             InitializeComponent();
+            // Извлечение исполнителя
+            ispolnitel.Text = Properties.Settings.Default.ispolnitel;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -144,6 +146,9 @@ namespace CovidForm
                 worksheet.Cells[2][102] = apartments_95.Text;
                 // исполнитель
                 worksheet.Cells[2][103] = ispolnitel.Text;
+                // исполнитель в Settings
+                Properties.Settings.Default.ispolnitel = ispolnitel.Text;
+                Properties.Settings.Default.Save();
                 try
                 {
                     string folder = System.IO.Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName);
