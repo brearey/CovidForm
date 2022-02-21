@@ -42,7 +42,7 @@ namespace CovidForm
         private void Button_Add_Contact(object sender, RoutedEventArgs e)
         {
             // Проверка чтобы хотя бы одно поле было заполнено
-            if (isEmpty())
+            if (!isEmpty())
             {
                 // Разница дат
                 DateTime date_firtsvacc_contact_16_6month = date_firtsvacc_contact_16.SelectedDate ?? new DateTime(2020, 01, 01);

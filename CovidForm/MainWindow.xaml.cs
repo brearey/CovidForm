@@ -34,7 +34,7 @@ namespace CovidForm
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             //проверка на пустоту исполнителя и всех обязательных полей
-            if (false)
+            if (!isEmpty())
             {
                 MessageBox.Show("Заполните все обязательные * поля", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
@@ -199,17 +199,16 @@ namespace CovidForm
                 String.IsNullOrWhiteSpace(antiseptic_31.Text) ||
                 String.IsNullOrWhiteSpace(gloves_32.Text) ||
                 String.IsNullOrWhiteSpace(distance_33.Text) ||
-                String.IsNullOrWhiteSpace(bus_34.Text) ||
-                String.IsNullOrWhiteSpace(bus_34.Text) ||
-                String.IsNullOrWhiteSpace(torg_35.Text) ||
-                String.IsNullOrWhiteSpace(pitanie_36.Text) ||
-                String.IsNullOrWhiteSpace(krasota_37.Text) ||
-                String.IsNullOrWhiteSpace(med_38.Text) ||
-                String.IsNullOrWhiteSpace(mass_naseleniya_39.Text) ||
-                String.IsNullOrWhiteSpace(inpatient_care_40.Text) ||
-                String.IsNullOrWhiteSpace(dormitory_41.Text) ||
-                String.IsNullOrWhiteSpace(relatives_42.Text) ||
-                String.IsNullOrWhiteSpace(private_43.Text) ||
+                //String.IsNullOrWhiteSpace(bus_34.Text) ||
+                //String.IsNullOrWhiteSpace(torg_35.Text) ||
+                //String.IsNullOrWhiteSpace(pitanie_36.Text) ||
+                //String.IsNullOrWhiteSpace(krasota_37.Text) ||
+                //String.IsNullOrWhiteSpace(med_38.Text) ||
+                //String.IsNullOrWhiteSpace(mass_naseleniya_39.Text) ||
+                //String.IsNullOrWhiteSpace(inpatient_care_40.Text) ||
+                //String.IsNullOrWhiteSpace(dormitory_41.Text) ||
+                //String.IsNullOrWhiteSpace(relatives_42.Text) ||
+                //String.IsNullOrWhiteSpace(private_43.Text) ||
                 String.IsNullOrWhiteSpace(cause_44.Text) ||
                 String.IsNullOrWhiteSpace(date_selection_45.Text) ||
                 String.IsNullOrWhiteSpace(date_result_46.Text) ||
@@ -245,23 +244,23 @@ namespace CovidForm
                 String.IsNullOrWhiteSpace(date_recovery_76.Text) ||
                 String.IsNullOrWhiteSpace(contact_77.Text) ||
                 String.IsNullOrWhiteSpace(contact_category_78.Text) ||
-                String.IsNullOrWhiteSpace(total_contact_79.Text) ||
-                String.IsNullOrWhiteSpace(persons_covid_80.Text) ||
-                String.IsNullOrWhiteSpace(household_81.Text) ||
-                String.IsNullOrWhiteSpace(place_work_82.Text) ||
-                String.IsNullOrWhiteSpace(place_education_83.Text) ||
-                String.IsNullOrWhiteSpace(social_contact_84.Text) ||
-                String.IsNullOrWhiteSpace(transport_contact_85.Text) ||
-                String.IsNullOrWhiteSpace(other_organi_86.Text) ||
-                String.IsNullOrWhiteSpace(medical_organi_87.Text) ||
-                String.IsNullOrWhiteSpace(supervision_medical_88.Text) ||
-                String.IsNullOrWhiteSpace(date_quarantine_89.Text) ||
-                String.IsNullOrWhiteSpace(events_contact_90.Text) ||
-                String.IsNullOrWhiteSpace(result_contact_91.Text) ||
-                String.IsNullOrWhiteSpace(house_92.Text) ||
-                String.IsNullOrWhiteSpace(entrance_93.Text) ||
-                String.IsNullOrWhiteSpace(floor_94.Text) ||
-                String.IsNullOrWhiteSpace(apartments_95.Text) ||
+                //String.IsNullOrWhiteSpace(total_contact_79.Text) ||
+                //String.IsNullOrWhiteSpace(persons_covid_80.Text) ||
+                //String.IsNullOrWhiteSpace(household_81.Text) ||
+                //String.IsNullOrWhiteSpace(place_work_82.Text) ||
+                //String.IsNullOrWhiteSpace(place_education_83.Text) ||
+                //String.IsNullOrWhiteSpace(social_contact_84.Text) ||
+                //String.IsNullOrWhiteSpace(transport_contact_85.Text) ||
+                //String.IsNullOrWhiteSpace(other_organi_86.Text) ||
+                //String.IsNullOrWhiteSpace(medical_organi_87.Text) ||
+                //String.IsNullOrWhiteSpace(supervision_medical_88.Text) ||
+                //String.IsNullOrWhiteSpace(date_quarantine_89.Text) ||
+                //String.IsNullOrWhiteSpace(events_contact_90.Text) ||
+                //String.IsNullOrWhiteSpace(result_contact_91.Text) ||
+                //String.IsNullOrWhiteSpace(house_92.Text) ||
+                //String.IsNullOrWhiteSpace(entrance_93.Text) ||
+                //String.IsNullOrWhiteSpace(floor_94.Text) ||
+                //String.IsNullOrWhiteSpace(apartments_95.Text) ||
                 //исполнитель
                 String.IsNullOrWhiteSpace(ispolnitel.Text)
                 )
